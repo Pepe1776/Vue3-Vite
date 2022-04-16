@@ -4,32 +4,39 @@
       <div class="title_cont_title">J Parker Dev</div>
     </div>
   </div>
+
   <div class="morph">
-    <div class="btn_row">
-      <h3 class="proj">Projects</h3>
-      <button @click="isShow = !isShow" id="mask" class="btn bbb">
-        <Icon class="bolt" style="font-size: 4em" icon="logos-metamask-icon" />
-      </button>
-      <button @click="isShow4 = !isShow4" id="vite" class="btn bb2">
-        <Icon class="bolt" style="font-size: 4em" icon="logos-vitejs" />
-      </button>
-      <button @click="isShow2 = !isShow2" id="react" class="btn bb3">
-        <Icon
-          class="bolt"
-          style="font-size: 4em"
-          icon="logos-create-react-app"
-        />
-      </button>
-      <button @click="isShow5 = !isShow5" id="vue" class="btn bb4">
-        <Icon class="bolt" style="font-size: 4em" icon="logos-vue" />
-      </button>
-      <button @click="isShow3 = !isShow3" id="ang" class="btn bb5">
-        <Icon class="bolt" style="font-size: 4em" icon="logos-angular-icon" />
-      </button>
-      <button @click="isShow6 = !isShow6" id="fire" class="btn bb6">
-        <Icon class="bolt" style="font-size: 4em" icon="logos-firebase" />
-      </button>
-    </div>
+    <Transition :duration="1050" name="fade" appear>
+      <div class="btn_row">
+        <h3 class="proj">Projects</h3>
+        <button @click="isShow = !isShow" id="mask" class="btn bbb">
+          <Icon
+            class="bolt"
+            style="font-size: 4em"
+            icon="logos-metamask-icon"
+          />
+        </button>
+        <button @click="isShow4 = !isShow4" id="vite" class="btn bb2">
+          <Icon class="bolt" style="font-size: 4em" icon="logos-vitejs" />
+        </button>
+        <button @click="isShow2 = !isShow2" id="react" class="btn bb3">
+          <Icon
+            class="bolt"
+            style="font-size: 4em"
+            icon="logos-create-react-app"
+          />
+        </button>
+        <button @click="isShow5 = !isShow5" id="vue" class="btn bb4">
+          <Icon class="bolt" style="font-size: 4em" icon="logos-vue" />
+        </button>
+        <button @click="isShow3 = !isShow3" id="ang" class="btn bb5">
+          <Icon class="bolt" style="font-size: 4em" icon="logos-angular-icon" />
+        </button>
+        <button @click="isShow6 = !isShow6" id="fire" class="btn bb6">
+          <Icon class="bolt" style="font-size: 4em" icon="logos-firebase" />
+        </button>
+      </div>
+    </Transition>
     <div class="dial_row"></div>
     <!-- <div class="glass">
       <h3>Display</h3>
@@ -37,210 +44,232 @@
     </div> -->
     <div>
       <!-- modal 1 -->
-      <div v-if="isShow">
-        <div class="modal-backdrop">
-          <div class="modal">
-            <header class="modal-header">
-              <slot name="header"> Web3 Defi Exchange </slot>
-              <button type="button" class="btn-close" @click="isShow = !isShow">
-                x
-              </button>
-            </header>
+      <Transition :duration="850" name="nested">
+        <div v-if="isShow" class="outer">
+          <div class="modal-backdrop">
+            <div class="modal inner">
+              <header class="modal-header">
+                <slot name="header"> Web3 Defi Exchange </slot>
+                <button
+                  type="button"
+                  class="btn-close"
+                  @click="isShow = !isShow"
+                >
+                  x
+                </button>
+              </header>
 
-            <section class="modal-body">
-              <slot name="body">
-                Web3 Defi Exchange app exchanging test Etherum for crypto dev
-                tokens. built using React, Hardhat, Ethers and Next.js
-              </slot>
-            </section>
+              <section class="modal-body">
+                <slot name="body">
+                  Web3 Defi Exchange app exchanging test Etherum for crypto dev
+                  tokens. built using React, Hardhat, Ethers and Next.js
+                </slot>
+              </section>
 
-            <footer class="modal-footer">
-              <slot name="footer"> visit site </slot>
-              <a href="https://web3-defi.netlify.app/" class="btn2">
-                <Icon
-                  class="bolt"
-                  style="font-size: 5.5em"
-                  icon="logos-metamask-icon"
-                />
-              </a>
-            </footer>
+              <footer class="modal-footer">
+                <slot name="footer"> visit site </slot>
+                <a href="https://web3-defi.netlify.app/" class="btn2">
+                  <Icon
+                    class="bolt"
+                    style="font-size: 5.5em"
+                    icon="logos-metamask-icon"
+                  />
+                </a>
+              </footer>
+            </div>
           </div>
         </div>
-      </div>
+      </Transition>
 
       <!-- modal 2 -->
-      <div v-if="isShow2">
-        <div class="modal-backdrop">
-          <div class="modal">
-            <header class="modal-header">
-              <slot name="header"> Web3 NFT Collection </slot>
-              <button
-                type="button"
-                class="btn-close"
-                @click="isShow2 = !isShow2"
-              >
-                x
-              </button>
-            </header>
+      <Transition :duration="850" name="nested">
+        <div v-if="isShow2" class="outer">
+          <div class="modal-backdrop">
+            <div class="modal inner">
+              <header class="modal-header">
+                <slot name="header"> Web3 NFT Collection </slot>
+                <button
+                  type="button"
+                  class="btn-close"
+                  @click="isShow2 = !isShow2"
+                >
+                  x
+                </button>
+              </header>
 
-            <section class="modal-body">
-              <slot name="body">
-                Web3 NFT collection app to mint and collect your own NFT
-                collection. built using React, Hardhat, Ethers and Next.js
-              </slot>
-            </section>
+              <section class="modal-body">
+                <slot name="body">
+                  Web3 NFT collection app to mint and collect your own NFT
+                  collection. built using React, Hardhat, Ethers and Next.js
+                </slot>
+              </section>
 
-            <footer class="modal-footer">
-              <slot name="footer"> visit site </slot>
-              <a href="https://web3-defi.netlify.app/" class="btn2">
-                <Icon
-                  class="bolt"
-                  style="font-size: 5.5em"
-                  icon="logos-create-react-app"
-                />
-              </a>
-            </footer>
+              <footer class="modal-footer">
+                <slot name="footer"> visit site </slot>
+                <a href="https://web3-defi.netlify.app/" class="btn2">
+                  <Icon
+                    class="bolt"
+                    style="font-size: 5.5em"
+                    icon="logos-create-react-app"
+                  />
+                </a>
+              </footer>
+            </div>
           </div>
         </div>
-      </div>
+      </Transition>
       <!-- modal 3 -->
-      <div v-if="isShow3">
-        <div class="modal-backdrop">
-          <div class="modal">
-            <header class="modal-header">
-              <slot name="header"> Web3Con Gratitude NFT </slot>
-              <button
-                type="button"
-                class="btn-close"
-                @click="isShow3 = !isShow3"
-              >
-                x
-              </button>
-            </header>
+      <Transition :duration="850" name="nested">
+        <div v-if="isShow3" class="outer">
+          <div class="modal-backdrop">
+            <div class="modal inner">
+              <header class="modal-header">
+                <slot name="header"> Web3Con Gratitude NFT </slot>
+                <button
+                  type="button"
+                  class="btn-close"
+                  @click="isShow3 = !isShow3"
+                >
+                  x
+                </button>
+              </header>
 
-            <section class="modal-body">
-              <slot name="body">
-                Web3Con Gratitude NFT collection app to mint and collect your
-                own NFT collection of gratitude. built using React, Hardhat,
-                Ethers and Next.js
-              </slot>
-            </section>
+              <section class="modal-body">
+                <slot name="body">
+                  Web3Con Gratitude NFT collection app to mint and collect your
+                  own NFT collection of gratitude. built using React, Hardhat,
+                  Ethers and Next.js
+                </slot>
+              </section>
 
-            <footer class="modal-footer">
-              <slot name="footer"> visit site </slot>
-              <a href="https://gratitude-nft.web.app/landing" class="btn2">
-                <Icon
-                  class="bolt"
-                  style="font-size: 5.5em"
-                  icon="logos-angular-icon"
-                />
-              </a>
-            </footer>
+              <footer class="modal-footer">
+                <slot name="footer"> visit site </slot>
+                <a href="https://gratitude-nft.web.app/landing" class="btn2">
+                  <Icon
+                    class="bolt"
+                    style="font-size: 5.5em"
+                    icon="logos-angular-icon"
+                  />
+                </a>
+              </footer>
+            </div>
           </div>
         </div>
-      </div>
+      </Transition>
       <!-- modal 4 -->
-      <div v-if="isShow4">
-        <div class="modal-backdrop">
-          <div class="modal">
-            <header class="modal-header">
-              <slot name="header"> J Parker 3D Portfolio </slot>
-              <button
-                type="button"
-                class="btn-close"
-                @click="isShow4 = !isShow4"
-              >
-                x
-              </button>
-            </header>
+      <Transition :duration="850" name="nested">
+        <div v-if="isShow4" class="outer">
+          <div class="modal-backdrop">
+            <div class="modal inner">
+              <header class="modal-header">
+                <slot name="header"> J Parker 3D Portfolio </slot>
+                <button
+                  type="button"
+                  class="btn-close"
+                  @click="isShow4 = !isShow4"
+                >
+                  x
+                </button>
+              </header>
 
-            <section class="modal-body">
-              <slot name="body">
-                Three.js built 3d interactive portfolio of J Parker. built using
-                Vite and vanilla javascript.
-              </slot>
-            </section>
+              <section class="modal-body">
+                <slot name="body">
+                  Three.js built 3d interactive portfolio of J Parker. built
+                  using Vite and vanilla javascript.
+                </slot>
+              </section>
 
-            <footer class="modal-footer">
-              <slot name="footer"> visit site </slot>
-              <a href="https://jparkerdev.netlify.app/" class="btn2">
-                <Icon
-                  class="bolt"
-                  style="font-size: 5.5em"
-                  icon="logos-vitejs"
-                />
-              </a>
-            </footer>
+              <footer class="modal-footer">
+                <slot name="footer"> visit site </slot>
+                <a href="https://jparkerdev.netlify.app/" class="btn2">
+                  <Icon
+                    class="bolt"
+                    style="font-size: 5.5em"
+                    icon="logos-vitejs"
+                  />
+                </a>
+              </footer>
+            </div>
           </div>
         </div>
-      </div>
+      </Transition>
+
       <!-- modal 5 -->
-      <div v-if="isShow5">
-        <div class="modal-backdrop">
-          <div class="modal">
-            <header class="modal-header">
-              <slot name="header"> J Parker Dev Portfolion </slot>
-              <button
-                type="button"
-                class="btn-close"
-                @click="isShow5 = !isShow5"
-              >
-                x
-              </button>
-            </header>
+      <Transition :duration="850" name="nested">
+        <div v-if="isShow5" class="outer">
+          <div class="modal-backdrop">
+            <div class="modal inner">
+              <header class="modal-header">
+                <slot name="header"> J Parker Dev Portfolion </slot>
+                <button
+                  type="button"
+                  class="btn-close"
+                  @click="isShow5 = !isShow5"
+                >
+                  x
+                </button>
+              </header>
 
-            <section class="modal-body">
-              <slot name="body">
-                Vue3.0 built portfolio of J Parker. built using Vue, Vite and
-                tailwind css.
-              </slot>
-            </section>
+              <section class="modal-body">
+                <slot name="body">
+                  Vue3.0 built portfolio of J Parker. built using Vue, Vite and
+                  tailwind css.
+                </slot>
+              </section>
 
-            <footer class="modal-footer">
-              <slot name="footer"> visit site </slot>
-              <a href="https://jparker.netlify.app/" class="btn2">
-                <Icon class="bolt" style="font-size: 5.5em" icon="logos-vue" />
-              </a>
-            </footer>
+              <footer class="modal-footer">
+                <slot name="footer"> visit site </slot>
+                <a href="https://jparker.netlify.app/" class="btn2">
+                  <Icon
+                    class="bolt"
+                    style="font-size: 5.5em"
+                    icon="logos-vue"
+                  />
+                </a>
+              </footer>
+            </div>
           </div>
         </div>
-      </div>
+      </Transition>
       <!-- modal 6 -->
-      <div v-if="isShow6">
-        <div class="modal-backdrop">
-          <div class="modal">
-            <header class="modal-header">
-              <slot name="header"> Book of Recipes </slot>
-              <button
-                type="button"
-                class="btn-close"
-                @click="isShow6 = !isShow6"
-              >
-                x
-              </button>
-            </header>
+      <Transition :duration="850" name="nested">
+        <div v-if="isShow6" class="outer">
+          <div class="modal-backdrop">
+            <div class="modal inner">
+              <header class="modal-header">
+                <slot name="header"> Book of Recipes </slot>
+                <button
+                  type="button"
+                  class="btn-close"
+                  @click="isShow6 = !isShow6"
+                >
+                  x
+                </button>
+              </header>
 
-            <section class="modal-body">
-              <slot name="body">
-                Recipe database app made to create, read, update and delete
-                recipes tied to a user and firebase database. built using Vue,
-                Vite and tailwind css.
-              </slot>
-            </section>
+              <section class="modal-body">
+                <slot name="body">
+                  Recipe database app made to create, read, update and delete
+                  recipes tied to a user and firebase database. built using Vue,
+                  Vite and tailwind css.
+                </slot>
+              </section>
 
-            <footer class="modal-footer">
-              <slot name="footer"> visit site </slot>
-              <a href="https://bookofrecipes.netlify.app/" class="btn2">
-                <Icon
-                  class="bolt"
-                  style="font-size: 5.5em"
-                  icon="logos-firebase"
-                />
-              </a>
-            </footer>
+              <footer class="modal-footer">
+                <slot name="footer"> visit site </slot>
+                <a href="https://bookofrecipes.netlify.app/" class="btn2">
+                  <Icon
+                    class="bolt"
+                    style="font-size: 5.5em"
+                    icon="logos-firebase"
+                  />
+                </a>
+              </footer>
+            </div>
           </div>
         </div>
-      </div>
+      </Transition>
+      <!-- end of modals -->
     </div>
   </div>
 </template>
@@ -286,6 +315,46 @@ body {
   visibility: hidden !important;
 }
 
+/* transitions */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+/* rules that target nested elements */
+.nested-enter-active .inner,
+.nested-leave-active .inner {
+  transition: all 0.3s ease-in-out;
+}
+
+.nested-enter-from .inner,
+.nested-leave-to .inner {
+  transform: translateX(30px);
+  opacity: 0;
+}
+/* delay enter of nested element for staggered effect */
+.nested-enter-active .inner {
+  transition-delay: 0.25s;
+}
+
+/* buttons */
 .btn {
   display: grid;
   place-items: center;
@@ -302,7 +371,8 @@ body {
   border-radius: 29px;
   background: #b6e8f2;
   -webkit-box-shadow: 17px 17px 24px #abdae3, -17px -17px 24px #c1f6ff;
-  box-shadow: 17px 17px 24px #abdae3, -17px -17px 24px #c1f6ff;
+  box-shadow: 17px 17px 24px #334346, -17px -17px 24px #c1f6ff;
+   transition: height 0.7s, opacity 0.7s;
 }
 .btn2 {
   display: grid;

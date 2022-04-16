@@ -481,8 +481,7 @@ body {
   width: 75%;
   background: #abdae357;
   box-shadow: 17px 17px 24px #abdae3, -17px 17px 24px #c1f6ff;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   border: 5px solid #abdae3;
 }
 

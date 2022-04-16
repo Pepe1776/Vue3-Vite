@@ -315,7 +315,7 @@ body {
   font-size: 2em;
   padding: 10px;
   width: 40%;
-  height: 100%;
+  height: 80%;
   -webkit-border-radius: 29px;
   border-radius: 29px;
   background: #b6e8f2;

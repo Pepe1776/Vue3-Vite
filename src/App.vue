@@ -381,9 +381,9 @@ body {
   color: #abdae3;
   opacity: 0.6;
   border: none;
-  margin: 25px;
+  margin-top: ;
   font-size: 2em;
-  padding: 10px;
+  padding: 5px;
   width: 40%;
   height: 80%;
   -webkit-border-radius: 29px;
@@ -405,6 +405,9 @@ body {
   outline: 2px solid #f5f9f9;
   box-shadow: 17px 17px 24px #c1f6ff, -17px -17px 24px #c1f6ff;
   opacity: 0.7;
+}
+.bolt {
+  font-size: inherit;
 }
 
 .dial_btn {
@@ -584,7 +587,7 @@ body {
   display: flex;
   border-top: 1px solid #eeeeee;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
 }
 

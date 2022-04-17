@@ -87,7 +87,7 @@
           <div class="modal-backdrop">
             <div class="modal inner">
               <header class="modal-header">
-                <slot name="header"> Web3 NFT Collection </slot>
+                <slot name="header"> Web3 DAO </slot>
                 <button
                   type="button"
                   class="btn-close"
@@ -99,14 +99,14 @@
 
               <section class="modal-body">
                 <slot name="body">
-                  Web3 NFT collection app to mint and collect your own NFT
-                  collection. built using React, Hardhat, Ethers and Next.js
+                  Web3 DAO app to join your own DAO. Built using React, Hardhat,
+                  Ethers and Next.js
                 </slot>
               </section>
 
               <footer class="modal-footer">
                 <slot name="footer"> visit site </slot>
-                <a href="https://web3-defi.netlify.app/" class="btn2">
+                <a href="https://web3-dao.netlify.app/" class="btn2">
                   <Icon
                     class="bolt"
                     style="font-size: 5.5em"
@@ -624,8 +624,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-
 
 .btn-close {
   position: absolute;

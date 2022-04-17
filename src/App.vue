@@ -8,6 +8,7 @@
   <div class="morph">
     <Transition :duration="1050" name="fade" appear>
       <div class="btn_row">
+        <div class="title">J Parker Dev</div>
         <h3 class="proj">Projects</h3>
         <button @click="isShow = !isShow" id="mask" class="btn bbb">
           <Icon
@@ -545,7 +546,7 @@ body {
 }
 
 .proj {
-  margin-left: 128%;
+  margin-left: 125%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -663,17 +664,13 @@ body {
   background: transparent;
 }
 .ctc {
-   font-weight: 900;
-  color: #a29e9e;
-  text-shadow: 2px 2px 8px #9ae0fa;
-  margin-top: 60%;
+  display: none;
+}
+.title {
+  display: none;
 }
 
 @media (max-device-width: 1400px) {
-  .title_cont_title {
-    font-size: 1.5em;
-    margin-right: 50%;
-  }
   .btn_row {
     display: flex;
     flex-direction: column;
@@ -681,6 +678,16 @@ body {
     align-items: center;
     margin-right: 0%;
     /* margin-top: 310%; */
+  }
+  .ctc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+    font-weight: 900;
+    color: #a29e9e;
+    text-shadow: 2px 2px 8px #9ae0fa;
+    margin-top: 60%;
   }
   .morph {
     position: sticky;
@@ -740,6 +747,23 @@ body {
   }
   .link {
     margin-top: 10%;
+  }
+  .title_cont_title {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    font-size: 3rem;
+    transform: translate(-50%, -50%);
+  }
+  .title {
+    font-size: 1.5rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15%;
+    font-weight: 900;
+    color: #a29e9e;
+    text-shadow: 2px 2px 8px #9ae0fa;
   }
 }
 </style>

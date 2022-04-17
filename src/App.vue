@@ -44,17 +44,30 @@
     </div> -->
     <div>
       <div class="dial_row">
-        <a href="https://twitter.com/JNotquery" class="btn">
-          <Icon class="bolt" style="font-size: 4em" icon="logos-twitter" />
+        <h3 class="ctc">Contact</h3>
+        <a href="https://twitter.com/JNotquery" class="btn link">
+          <Icon
+            class="bolt linki"
+            style="font-size: 4em"
+            icon="logos-twitter"
+          />
         </a>
-        <a href="https://instagram.com/J_Not_query" class="btn">
-          <Icon class="bolt" style="font-size: 4em" icon="logos-instagram" />
+        <a href="https://instagram.com/J_Not_query" class="btn link">
+          <Icon
+            class="bolt linki"
+            style="font-size: 4em"
+            icon="logos-instagram"
+          />
         </a>
         <a
           href="https://www.linkedin.com/in/justin-parker-849356178/"
-          class="btn"
+          class="btn link"
         >
-          <Icon class="bolt" style="font-size: 4em" icon="logos-linkedin" />
+          <Icon
+            class="bolt linki"
+            style="font-size: 4em"
+            icon="logos-linkedin"
+          />
         </a>
       </div>
       <!-- modal 1 -->
@@ -649,6 +662,12 @@ body {
   color: #eeeeee;
   background: transparent;
 }
+.ctc {
+   font-weight: 900;
+  color: #a29e9e;
+  text-shadow: 2px 2px 8px #9ae0fa;
+  margin-top: 60%;
+}
 
 @media (max-device-width: 1400px) {
   .title_cont_title {
@@ -670,7 +689,10 @@ body {
     margin-right: 20%;
   }
   .proj {
-    display: none;
+    display: absolute;
+    left: auto;
+    top: auto;
+    transform: translate(-80%, -40%);
   }
   .main_cont {
     display: none;
@@ -704,10 +726,20 @@ body {
     font-size: 2rem;
     padding: 5px;
     margin-right: -10%;
-    margin-top: 5%;
+    margin-top: -15%;
   }
   .dial_row {
     flex-direction: column;
+  }
+  .btn {
+    width: 80%;
+    font-size: 2rem;
+  }
+  .linki {
+    width: 6rem;
+  }
+  .link {
+    margin-top: 10%;
   }
 }
 </style>

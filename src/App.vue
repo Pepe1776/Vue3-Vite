@@ -698,32 +698,28 @@ body {
   .morph {
     position: sticky;
     z-index: 2;
-    margin-top: -180%;
-    margin-right: 50%;
+    margin-top: 10%;
+    margin-right: 20%;
+  }
+  .proj {
+    display: none;
   }
   .main_cont {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    inset: 0;
-    background: linear-gradient(to bottom, #efefef 30%, #00d2fc 400%);
+    display: none;
   }
   .modal {
-    width: 65%;
-    height: 50%;
-    margin-top: -80%;
-    margin-left: -35%;
+    width: 80%;
+    height: 80%;
+    margin-top: 0%;
+    margin-left: 0%;
   }
   .modal-header {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     padding: 2px;
   }
   .modal-body {
     margin-top: 15%;
-    font-size: .8rem;
+    font-size: 1rem;
     padding: 20px;
   }
   .modal-footer {

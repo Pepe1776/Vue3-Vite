@@ -37,12 +37,26 @@
         </button>
       </div>
     </Transition>
-    <div class="dial_row"></div>
+
     <!-- <div class="glass">
       <h3>Display</h3>
       <h4></h4>
     </div> -->
     <div>
+      <div class="dial_row">
+        <a href="https://twitter.com/JNotquery" class="btn">
+          <Icon class="bolt" style="font-size: 4em" icon="logos-twitter" />
+        </a>
+        <a href="https://instagram.com/J_Not_query" class="btn">
+          <Icon class="bolt" style="font-size: 4em" icon="logos-instagram" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/justin-parker-849356178/"
+          class="btn"
+        >
+          <Icon class="bolt" style="font-size: 4em" icon="logos-linkedin" />
+        </a>
+      </div>
       <!-- modal 1 -->
       <Transition :duration="850" name="nested">
         <div v-if="isShow" class="outer">
@@ -457,11 +471,9 @@ body {
 .dial_row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  grid-row: 1;
-  grid-column: 2;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  margin-left: 5%;
 }
 
 .main_cont {
@@ -492,7 +504,7 @@ body {
 
 .morph {
   position: absolute;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   width: 70%;
@@ -520,7 +532,7 @@ body {
 }
 
 .proj {
-  margin-left: 139%;
+  margin-left: 128%;
   display: flex;
   justify-content: center;
   align-items: center;

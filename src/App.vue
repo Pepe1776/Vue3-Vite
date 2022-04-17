@@ -706,5 +706,8 @@ body {
     margin-right: -10%;
     margin-top: 5%;
   }
+  .dial_row {
+    flex-direction: column;
+  }
 }
 </style>

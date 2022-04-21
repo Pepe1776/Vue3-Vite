@@ -738,8 +738,12 @@ body {
   }
   .morph {
     position: sticky;
+    height: 250vh;
+    width: 100vw;
     z-index: 2;
     margin: 0;
+    display: flex;
+    flex-direction: column;
   }
   .proj {
     display: none;
@@ -752,8 +756,8 @@ body {
     display: none;
   }
   .modal {
-    width: 80%;
-    height: 80%;
+    width: 100vw;
+    height: 100vh;
     margin-top: 0%;
     margin-left: 0%;
   }
@@ -785,11 +789,11 @@ body {
     flex-direction: column;
   }
   .btn {
-    width: 80%;
+    width: 100%;
     font-size: 2rem;
   }
   .linki {
-    width: 6rem;
+    width: 100%;
   }
   .link {
     margin: 0;

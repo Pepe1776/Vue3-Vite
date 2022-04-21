@@ -743,10 +743,11 @@ body {
     margin-right: 20%;
   }
   .proj {
-    display: absolute;
+    display: none;
+    /* display: absolute;
     left: auto;
     top: auto;
-    transform: translate(-80%, -40%);
+    transform: translate(-80%, -40%); */
   }
   .main_cont {
     display: none;

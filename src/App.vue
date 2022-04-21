@@ -740,7 +740,6 @@ body {
     position: sticky;
     height: 250vh;
     width: 100vw;
-    z-index: 2;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -796,6 +795,7 @@ body {
     width: 100%;
   }
   .link {
+    width: 100%;
     margin: 0;
   }
   .title_cont_title {

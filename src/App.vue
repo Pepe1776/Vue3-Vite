@@ -1,5 +1,10 @@
-<template class="main">
+<template class="main" id="app">
   <div class="main_cont">
+    <div class="mode-toggle" @click="modeToggle" :class="darkDark">
+      <div class="toggle">
+        <div id="dark-mode" type="checkbox"></div>
+      </div>
+    </div>
     <div class="title_cont">
       <div class="title_cont_title">J Parker Dev</div>
     </div>
@@ -68,10 +73,7 @@
             icon="logos-instagram"
           />
         </a>
-        <a
-          href="https://www.linkedin.com/in/justin-parker-849356178/"
-          class=""
-        >
+        <a href="https://www.linkedin.com/in/justin-parker-849356178/" class="">
           <Icon
             class="bolt linki"
             style="font-size: 4em"
@@ -336,11 +338,43 @@ export default {
       isShow4: false,
       isShow5: false,
       isShow6: false,
+      darkMode: false,
     };
   },
 
   props: {
     msg: String,
+  },
+
+  methods: {
+    dark() {
+      document.querySelector("body").classList.add("dark-mode");
+      this.darkMode = true;
+      this.$emit("dark");
+    },
+
+    light() {
+      document.querySelector("body").classList.remove("dark-mode");
+      this.darkMode = false;
+      this.$emit("light");
+    },
+
+    modeToggle() {
+      if (
+        this.darkMode ||
+        document.querySelector("body").classList.contains("dark-mode")
+      ) {
+        this.light();
+      } else {
+        this.dark();
+      }
+    },
+  },
+
+  computed: {
+    darkDark() {
+      return this.darkMode && "darkmode-toggled";
+    },
   },
 };
 </script>
@@ -372,11 +406,12 @@ body {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 100%;
-  background-color: #abdae3;
+  background-color: #fe05d936;
   color: rgb(55, 54, 54);
   text-align: center;
   border-radius: 16px;
   padding: 5px 0;
+  font-size: 1.6rem;
 
   /* Position the tooltip */
   position: absolute;
@@ -442,9 +477,9 @@ body {
   height: 100%;
   -webkit-border-radius: 29px;
   border-radius: 29px;
-  background: #b6e8f2;
-  -webkit-box-shadow: 17px 17px 24px #abdae3, -17px -17px 24px #c1f6ff;
-  box-shadow: 17px 17px 24px #334346, -17px -17px 24px #c1f6ff;
+  background: #fe05d90d;
+  -webkit-box-shadow: 17px 17px 24px #fe05d996, -17px -17px 24px #c1f6ff;
+  box-shadow: 17px 17px 24px #fe05d996, -17px -17px 24px #fff;
   transition: height 0.7s, opacity 0.7s;
 }
 .btn2 {
@@ -476,7 +511,7 @@ body {
 .btn:hover,
 .btn2:hover {
   outline: 2px solid #f5f9f9;
-  box-shadow: 17px 17px 24px #c1f6ff, -17px -17px 24px #c1f6ff;
+  box-shadow: 17px 17px 24px #fa50e096, -17px -17px 24px #f1ffc1;
   opacity: 0.7;
 }
 .bolt {
@@ -540,7 +575,7 @@ body {
   width: 100vw;
   height: 100vh;
   inset: 0;
-  background: linear-gradient(to top right, #efefef 30%, #00d2fc 400%);
+  background: linear-gradient(to top right, #efefef 30%, #fe05d996 400%);
 }
 .title_cont {
   position: absolute;
@@ -555,10 +590,14 @@ body {
 }
 
 .title_cont_title {
+  display: flex;
+  margin-left: 100px;
+  justify-content: center;
+  align-items: center;
   font-size: 5em;
   font-weight: 900;
   color: #d7d2d2;
-  text-shadow: 2px 2px 8px #2e2e2e, 2px 2px 8px #00d2fc, 4px 4px 8px #f8fafb,
+  text-shadow: 2px 2px 8px #2e2e2e, 2px 2px 8px #c0fe0596, 4px 4px 8px #f8fafb,
     4px 4px 8px #2e2e2e;
 }
 
@@ -572,8 +611,8 @@ body {
   top: 20%;
   left: 15%;
   border-radius: 52px;
-  background: linear-gradient(145deg, #b6e8f2, #f0f0f0);
-  box-shadow: 15px 15px 28px #9ae0fa, -15px -15px 28px #ffffff;
+  background: linear-gradient(145deg, #fe05d996, #f0f0f0);
+  box-shadow: 15px 15px 28px #fe05d996, -15px -15px 28px #ffffff;
 }
 
 .glass {
@@ -583,7 +622,7 @@ body {
   height: clamp(80%, 100%, 150%);
   width: 80%;
   color: #d7d2d2;
-  background: rgba(154, 224, 250, 0.3);
+  background: #fe05d996;
   box-shadow: 0 8px 32px 0 rgba(8, 173, 255, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -592,16 +631,15 @@ body {
 }
 
 .proj {
-  margin-left: 125%;
-  margin-top: 30px;
+  position: absolute;
+  width: 45%;
+  margin: -45px 15px  0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: clamp(80%, 100%, 150%);
-  width: 80%;
-  color: #00000097;
-  background: rgba(154, 224, 250, 0.3);
-  box-shadow: 0 8px 32px 0 rgba(8, 173, 255, 0.37);
+  color: #ffffff97;
+  background: #fe05d91f;
+  box-shadow: 0 8px 32px 0 #fff;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
@@ -626,10 +664,10 @@ body {
   border-radius: 10%;
   height: 85%;
   width: 85%;
-  background: #abdae357;
-  box-shadow: 17px 17px 24px #abdae3, -17px 17px 24px #c1f6ff;
+  background: #fe05d92b;
+  box-shadow: 17px 17px 24px #ff37e196, -17px 17px 24px #d4ffc1;
   display: grid;
-  border: 5px solid #abdae3;
+  border: 5px solid #ffffff96;
   backdrop-filter: blur(6px);
 }
 
@@ -733,8 +771,7 @@ body {
     margin: 0;
     font-weight: 900;
     color: #a29e9e;
-    text-shadow: 2px 2px 8px #9ae0fa;
-
+    text-shadow: 2px 2px 8px #fe05d996;
   }
   .morph {
     position: sticky;
@@ -804,16 +841,125 @@ body {
     z-index: 4;
     font-size: 3rem;
     transform: translate(-50%, -50%);
+
   }
   .title {
     font-size: 1.5rem;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
     font-weight: 900;
     color: #a29e9e;
     text-shadow: 2px 2px 8px #9ae0fa;
   }
+}
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+body {
+  background-color: #fff;
+  color: #171717;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body.dark-mode {
+  background-color: #242424;
+}
+body.dark-mode .flex h1 {
+  color: #fff;
+}
+
+.mode-toggle {
+  position: relative;
+  padding: 0;
+  width: 44px;
+  height: 24px;
+  min-width: 36px;
+  min-height: 20px;
+  background-color: #262626;
+  border: 0;
+  border-radius: 24px;
+  outline: 0;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  appearance: none;
+  transition: background-color 0.5s ease;
+}
+.mode-toggle .toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  box-shadow: inset 0 0 0 2px #a5abba;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.mode-toggle .toggle #dark-mode {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.mode-toggle .toggle #dark-mode:before {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  float: left;
+  background-color: #a5abba;
+  transition: border-radius 0.5s ease, width 0.5s ease, height 0.5s ease,
+    left 0.5s ease, transform 0.5s ease;
+}
+
+body.dark-mode .mode-toggle {
+  background-color: #333333;
+}
+body.dark-mode .mode-toggle .toggle {
+  transform: translateX(19px);
+}
+body.dark-mode .mode-toggle .toggle #dark-mode:before {
+  border-radius: 50%;
+  width: 150%;
+  height: 85%;
+  left: 40%;
+  transform: translate(-10%, -40%), rotate(-35deg);
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro";
+}
+
+h1 {
+  font-weight: 400;
+  transition: color 0.5s ease;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 </style>

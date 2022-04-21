@@ -723,24 +723,23 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 0%;
+    margin: 0;
     /* margin-top: 310%; */
   }
   .ctc {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0%;
+    margin: 0;
     font-weight: 900;
     color: #a29e9e;
     text-shadow: 2px 2px 8px #9ae0fa;
-    margin-top: 60%;
+
   }
   .morph {
     position: sticky;
     z-index: 2;
-    margin-top: 0%;
-    margin-right: 10%;
+    margin: 0;
   }
   .proj {
     display: none;
@@ -763,25 +762,24 @@ body {
     padding: 2px;
   }
   .modal-body {
-    margin-top: 0%;
+    margin: 0;
     font-size: 1rem;
     padding: 20px;
   }
   .modal-footer {
-    margin-top: 0px;
+    margin: 0;
     font-size: 1rem;
     padding: 0;
   }
   .btn2 {
-    margin-top: 60px;
+    margin: 0;
     font-size: 1rem;
     padding: 0;
   }
   .btn-close {
     font-size: 2rem;
     padding: 5px;
-    margin-right: 0%;
-    margin-top: 0%;
+    margin: 0;
   }
   .dial_row {
     flex-direction: column;
@@ -794,7 +792,7 @@ body {
     width: 6rem;
   }
   .link {
-    margin-top: 0%;
+    margin: 0;
   }
   .title_cont_title {
     position: absolute;
@@ -808,7 +806,7 @@ body {
     display: block;
     justify-content: center;
     align-items: center;
-    margin-top: 0%;
+    margin: 0;
     font-weight: 900;
     color: #a29e9e;
     text-shadow: 2px 2px 8px #9ae0fa;

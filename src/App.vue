@@ -54,14 +54,14 @@
     <div>
       <div class="dial_row">
         <h3 class="ctc">Contact</h3>
-        <a href="https://twitter.com/JNotquery" class="btn link">
+        <a href="https://twitter.com/JNotquery" class="">
           <Icon
             class="bolt linki"
             style="font-size: 4em"
             icon="logos-twitter"
           />
         </a>
-        <a href="https://instagram.com/J_Not_query" class="btn link">
+        <a href="https://instagram.com/J_Not_query" class="">
           <Icon
             class="bolt linki"
             style="font-size: 4em"
@@ -70,7 +70,7 @@
         </a>
         <a
           href="https://www.linkedin.com/in/justin-parker-849356178/"
-          class="btn link"
+          class=""
         >
           <Icon
             class="bolt linki"

@@ -10,31 +10,39 @@
       <div class="btn_row">
         <div class="title">J Parker Dev</div>
         <h3 class="proj">Projects</h3>
-        <button @click="isShow = !isShow" id="mask" class="btn bbb">
+        <button @click="isShow5 = !isShow5" id="vue" class="btn bb4 tooltip">
+          <Icon class="bolt" style="font-size: 4em" icon="logos-vue" />
+          <div class="tooltiptext">Vue 3 Portfolio</div>
+        </button>
+
+        <button @click="isShow = !isShow" id="mask" class="btn bbb tooltip">
           <Icon
             class="bolt"
             style="font-size: 4em"
             icon="logos-metamask-icon"
           />
+          <div class="tooltiptext">Web3 Defi Exchange</div>
         </button>
-        <button @click="isShow4 = !isShow4" id="vite" class="btn bb2">
+        <button @click="isShow4 = !isShow4" id="vite" class="btn bb2 tooltip">
           <Icon class="bolt" style="font-size: 4em" icon="logos-vitejs" />
+          <div class="tooltiptext">Three.js Vite Portfolio</div>
         </button>
-        <button @click="isShow2 = !isShow2" id="react" class="btn bb3">
+        <button @click="isShow2 = !isShow2" id="react" class="btn bb3 tooltip">
           <Icon
             class="bolt"
             style="font-size: 4em"
             icon="logos-create-react-app"
           />
+          <div class="tooltiptext">Web3 DAO React</div>
         </button>
-        <button @click="isShow5 = !isShow5" id="vue" class="btn bb4">
-          <Icon class="bolt" style="font-size: 4em" icon="logos-vue" />
-        </button>
-        <button @click="isShow3 = !isShow3" id="ang" class="btn bb5">
+
+        <button @click="isShow3 = !isShow3" id="ang" class="btn bb5 tooltip">
           <Icon class="bolt" style="font-size: 4em" icon="logos-angular-icon" />
+          <div class="tooltiptext">Web3Con Nft Project</div>
         </button>
-        <button @click="isShow6 = !isShow6" id="fire" class="btn bb6">
+        <button @click="isShow6 = !isShow6" id="fire" class="btn bb6 tooltip">
           <Icon class="bolt" style="font-size: 4em" icon="logos-firebase" />
+          <div class="tooltiptext">Full C.R.U.D. Recipes</div>
         </button>
       </div>
     </Transition>
@@ -95,13 +103,14 @@
               </section>
 
               <footer class="modal-footer">
-                <slot name="footer"> visit site </slot>
-                <a href="https://web3-defi.netlify.app/" class="btn2">
+                <slot name="footer"></slot>
+                <a href="https://web3-defi.netlify.app/" class="btn2 tooltip">
                   <Icon
                     class="bolt"
                     style="font-size: 5.5em"
                     icon="logos-metamask-icon"
                   />
+                  <div class="tooltiptext">Visit Site</div>
                 </a>
               </footer>
             </div>
@@ -133,13 +142,14 @@
               </section>
 
               <footer class="modal-footer">
-                <slot name="footer"> visit site </slot>
-                <a href="https://web3-dao.netlify.app/" class="btn2">
+                <slot name="footer"> </slot>
+                <a href="https://web3-dao.netlify.app/" class="btn2 tooltip">
                   <Icon
                     class="bolt"
                     style="font-size: 5.5em"
                     icon="logos-create-react-app"
                   />
+                  <div class="tooltiptext">Visit Site</div>
                 </a>
               </footer>
             </div>
@@ -171,13 +181,17 @@
               </section>
 
               <footer class="modal-footer">
-                <slot name="footer"> visit site </slot>
-                <a href="https://gratitude-nft.web.app/landing" class="btn2">
+                <slot name="footer"></slot>
+                <a
+                  href="https://gratitude-nft.web.app/landing"
+                  class="btn2 tooltip"
+                >
                   <Icon
                     class="bolt"
                     style="font-size: 5.5em"
                     icon="logos-angular-icon"
                   />
+                  <div class="tooltiptext">Visit Site</div>
                 </a>
               </footer>
             </div>
@@ -208,13 +222,14 @@
               </section>
 
               <footer class="modal-footer">
-                <slot name="footer"> visit site </slot>
-                <a href="https://jparkerdev.netlify.app/" class="btn2">
+                <slot name="footer"></slot>
+                <a href="https://jparkerdev.netlify.app/" class="btn2 tooltip">
                   <Icon
                     class="bolt"
                     style="font-size: 5.5em"
                     icon="logos-vitejs"
                   />
+                  <div class="tooltiptext">Visit Site</div>
                 </a>
               </footer>
             </div>
@@ -246,13 +261,14 @@
               </section>
 
               <footer class="modal-footer">
-                <slot name="footer"> visit site </slot>
-                <a href="https://jparker.netlify.app/" class="btn2">
+                <slot name="footer"> </slot>
+                <a href="https://jparker.netlify.app/" class="btn2 tooltip">
                   <Icon
                     class="bolt"
                     style="font-size: 5.5em"
                     icon="logos-vue"
                   />
+                  <div class="tooltiptext">Visit Site</div>
                 </a>
               </footer>
             </div>
@@ -284,13 +300,17 @@
               </section>
 
               <footer class="modal-footer">
-                <slot name="footer"> visit site </slot>
-                <a href="https://bookofrecipes.netlify.app/" class="btn2">
+                <slot name="footer"></slot>
+                <a
+                  href="https://bookofrecipes.netlify.app/"
+                  class="btn2 tooltip"
+                >
                   <Icon
                     class="bolt"
                     style="font-size: 5.5em"
                     icon="logos-firebase"
                   />
+                  <div class="tooltiptext">Visit Site</div>
                 </a>
               </footer>
             </div>
@@ -304,7 +324,6 @@
 
 <script lang="ts">
 import { Icon } from "@iconify/vue";
-
 export default {
   components: {
     Icon,
@@ -341,6 +360,32 @@ body {
 }
 .notShown {
   visibility: hidden !important;
+}
+
+/* tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: #abdae3;
+  color: rgb(55, 54, 54);
+  text-align: center;
+  border-radius: 16px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  bottom: -55px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 /* transitions */
@@ -459,27 +504,27 @@ body {
 }
 .bbb {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 2;
 }
 .bb2 {
   grid-column: 2;
-  grid-row: 1;
+  grid-row: 2;
 }
 .bb3 {
   grid-column: 3;
-  grid-row: 1;
+  grid-row: 2;
 }
 .bb4 {
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1;
 }
 .bb5 {
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 1;
 }
 .bb6 {
   grid-column: 3;
-  grid-row: 2;
+  grid-row: 1;
 }
 
 .dial_row {
@@ -513,7 +558,8 @@ body {
   font-size: 5em;
   font-weight: 900;
   color: #d7d2d2;
-  text-shadow: 2px 2px 8px #9ae0fa;
+  text-shadow: 2px 2px 8px #2e2e2e, 2px 2px 8px #00d2fc, 4px 4px 8px #f8fafb,
+    4px 4px 8px #2e2e2e;
 }
 
 .morph {
@@ -547,19 +593,20 @@ body {
 
 .proj {
   margin-left: 125%;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: clamp(80%, 100%, 150%);
   width: 80%;
-  color: #ffffff;
+  color: #00000097;
   background: rgba(154, 224, 250, 0.3);
   box-shadow: 0 8px 32px 0 rgba(8, 173, 255, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  text-shadow: 2px 2px 8px #000000;
+  font-size: 1.5rem;
 }
 
 /* modal */

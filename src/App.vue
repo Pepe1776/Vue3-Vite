@@ -503,7 +503,9 @@ body {
 }
 
 .btn_row {
+  margin-top: 15%;
   display: grid;
+  place-content: center;
   grid-template-rows: 3;
   grid-template-columns: 4;
   grid-gap: 50px;
@@ -568,7 +570,7 @@ body {
   font-size: 5em;
   font-weight: 900;
   color: #d7d2d2;
-  text-shadow: 2px 2px 8px #2e2e2e, 2px 2px 8px #c0fe0596, 4px 4px 8px #f8fafb,
+  text-shadow: 2px 2px 8px #8202d7, 2px 2px 8px #fafe058b, 8px 8px 18px #f8fafb,
     4px 4px 8px #2e2e2e;
 }
 

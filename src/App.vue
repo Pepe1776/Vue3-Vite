@@ -345,37 +345,6 @@ export default {
   props: {
     msg: String,
   },
-
-  methods: {
-    dark() {
-      document.querySelector("body").classList.add("dark-mode");
-      this.darkMode = true;
-      this.$emit("dark");
-    },
-
-    light() {
-      document.querySelector("body").classList.remove("dark-mode");
-      this.darkMode = false;
-      this.$emit("light");
-    },
-
-    modeToggle() {
-      if (
-        this.darkMode ||
-        document.querySelector("body").classList.contains("dark-mode")
-      ) {
-        this.light();
-      } else {
-        this.dark();
-      }
-    },
-  },
-
-  computed: {
-    darkDark() {
-      return this.darkMode && "darkmode-toggled";
-    },
-  },
 };
 </script>
 <style>
@@ -477,16 +446,17 @@ body {
   height: 100%;
   -webkit-border-radius: 29px;
   border-radius: 29px;
-  background: #fe05d90d;
-  -webkit-box-shadow: 17px 17px 24px #fe05d996, -17px -17px 24px #c1f6ff;
-  box-shadow: 17px 17px 24px #fe05d996, -17px -17px 24px #fff;
+  background: ##9605fe52;
+  -webkit-box-shadow: 17px 17px 24px #9605fe52, -17px -17px 24px #c1f6ff;
+  box-shadow: 17px 17px 24px #9605fe52, -17px -17px 24px #fff;
   transition: height 0.7s, opacity 0.7s;
 }
+
 .btn2 {
   display: grid;
   place-items: center;
   cursor: pointer;
-  color: #abdae3;
+  color: #9605fe52;
   opacity: 0.6;
   border: none;
   margin-top: ;
@@ -496,20 +466,21 @@ body {
   height: 80%;
   -webkit-border-radius: 29px;
   border-radius: 29px;
-  background: #b6e8f2;
-  -webkit-box-shadow: 17px 17px 24px #abdae3, -17px -17px 24px #c1f6ff;
-  box-shadow: 17px 17px 24px #abdae3, -17px -17px 24px #c1f6ff;
+  background: #9605fe1e;
+  -webkit-box-shadow: 17px 17px 24px #9605fe52, -17px -17px 24px #e5fe0552;
+  box-shadow: 17px 17px 24px #e5fe0552, -17px -17px 24px #e5fe0552;
 }
 .btn:active,
 .btn:focus {
   opacity: 0.9;
-  background: #b6e8f2;
-  -webkit-box-shadow: 17px 17px 24px #c1f6ff, -17px -17px 24px #abdae3;
-  box-shadow: 17px 17px 24px #e7edee, -17px -17px 24px ##abdae3;
+  background: #e5fe0552;
+  -webkit-box-shadow: 17px 17px 24px #e5fe0552, -17px -17px 24px #e5fe0552;
+  box-shadow: 17px 17px 24px #e5fe0552, -17px -17px 24px #e5fe0552;
 }
 
 .btn:hover,
-.btn2:hover {
+.btn2:hover,
+.linki:hover {
   outline: 2px solid #f5f9f9;
   box-shadow: 17px 17px 24px #fa50e096, -17px -17px 24px #f1ffc1;
   opacity: 0.7;
@@ -520,15 +491,15 @@ body {
 
 .dial_btn {
   cursor: pointer;
-  color: #abdae3;
+  color: #9605fe52;
   border: none;
   height: 400px;
   width: 400px;
   -webkit-border-radius: 200px;
   border-radius: 200px;
-  background: #b6e8f2;
-  -webkit-box-shadow: 17px 17px 24px #abdae3, -17px -17px 24px #c1f6ff;
-  box-shadow: 17px 17px 24px #abdae3, -17px -17px 24px #c1f6ff;
+  background: #9605fe52;
+  -webkit-box-shadow: 17px 17px 24px #9605fe52, -17px -17px 24px #ebffc1;
+  box-shadow: 17px 17px 24px #9605fe52, -17px -17px 24px #f4ffc1;
 }
 
 .btn_row {
@@ -611,7 +582,7 @@ body {
   top: 20%;
   left: 15%;
   border-radius: 52px;
-  background: linear-gradient(145deg, #fe05d996, #f0f0f0);
+  background: linear-gradient(145deg, #9605fe52, #f0f0f0);
   box-shadow: 15px 15px 28px #fe05d996, -15px -15px 28px #ffffff;
 }
 
@@ -633,7 +604,7 @@ body {
 .proj {
   position: absolute;
   width: 45%;
-  margin: -45px 15px  0;
+  margin: -45px 15px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -841,7 +812,6 @@ body {
     z-index: 4;
     font-size: 3rem;
     transform: translate(-50%, -50%);
-
   }
   .title {
     font-size: 1.5rem;
@@ -853,7 +823,6 @@ body {
     text-shadow: 2px 2px 8px #9ae0fa;
   }
 }
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 body {
   background-color: #fff;
   color: #171717;

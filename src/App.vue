@@ -1,5 +1,5 @@
 <template class="app" id="app" :class="isDark ? 'dark-mode' : ''">
-  <div class="main_cont" :class="isDark ? '' : 'dark-mode'">
+  <div class="main_cont" :class="isDark ? 'dark-mode' : ''">
     <!-- <button @click="isDark = !isDark" class="dark-toggle">
       <Icon
         class="dark-toggle"
@@ -14,7 +14,7 @@
     </div>
   </div>
 
-  <div class="morph" :class="isDark ? '' : 'dark-mode'">
+  <div class="morph" :class="isDark ? 'dark-mode' : ''">
     <Transition :duration="1050" name="fade" appear>
       <div class="btn_row">
         <div class="title">J Parker Dev</div>
@@ -92,7 +92,7 @@
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
-          :class="isDark ? '' : 'dark-mode'"
+          :class="isDark ? 'dark-mode' : ''"
           @click="isDark = !isDark"
         >
           <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
@@ -733,7 +733,7 @@ svg.dark-mode #clouds {
   width: 100vw;
   height: 100vh;
   inset: 0;
-  background: linear-gradient(to top right, #efefef 30%, #fe05d996 400%);
+  background: #310f00;
 }
 .title_cont {
   position: absolute;

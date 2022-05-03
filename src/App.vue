@@ -1,5 +1,6 @@
 <template class="app" id="app" :class="isDark ? 'dark-mode' : ''">
   <div class="main_cont" :class="isDark ? 'dark-mode' : ''">
+    <LoadingScreen v-show="isLoading"></LoadingScreen>
     <!-- <button @click="isDark = !isDark" class="dark-toggle">
       <Icon
         class="dark-toggle"
@@ -469,9 +470,10 @@
 </template>
 
 <script lang="ts">
+import LoadingScreen from "@/components/LoadingScreen.vue";
 export default {
   name: "app",
-  data: function () {
+  data() {
     return {
       isShow: false,
       isShow2: false,
@@ -479,18 +481,28 @@ export default {
       isShow4: false,
       isShow5: false,
       isShow6: false,
-      isDark: true,
+      isDark: false,
+      isLoading: true,
     };
   },
+
+  mounted() {
+    // after the component instance has been mounted,
+    setTimeout(
+      (_) => (this.isLoading = false), // enable the input
+      2000 // after 1 second
+    );
+  },
   methods: {
-    components: {},
+    components: {
+      LoadingScreen,
+    },
   },
 };
 </script>
 
 <script lang="ts" setup>
 import { Icon } from "@iconify/vue";
-
 defineProps({
   msg: String,
 });
@@ -955,6 +967,7 @@ svg.dark-mode #clouds {
     margin: 0;
     display: flex;
     flex-direction: column;
+    background: black;
   }
   .proj {
     display: none;

@@ -479,7 +479,7 @@ export default {
       isShow4: false,
       isShow5: false,
       isShow6: false,
-      isDark: true,
+      isDark: false,
     };
   },
   methods: {
@@ -581,6 +581,18 @@ body {
 /* delay enter of nested element for staggered effect */
 .nested-enter-active .inner {
   transition-delay: 0.25s;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* ADD TRANSITIONS */
@@ -733,7 +745,10 @@ svg.dark-mode #clouds {
   width: 100vw;
   height: 100vh;
   inset: 0;
-  background: #310f00;
+  background: linear-gradient(-45deg, #d9ff00, #ffbc04, #ff5f03, #ff0000);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
 }
 .title_cont {
   position: absolute;
@@ -992,11 +1007,9 @@ svg.dark-mode #clouds {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 60px;
-
   }
   .link {
     width: 100%;
-    
   }
   .title_cont_title {
     position: absolute;
@@ -1015,11 +1028,13 @@ svg.dark-mode #clouds {
     text-shadow: 2px 2px 8px #9ae0fa;
   }
   .dark-toggle {
-   
   }
 }
 .dark-mode {
   background: #1a1a1a;
+   background: linear-gradient(-45deg, #566502, #2a1f02, #3b1601, #000000);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   color: #ffffff;
   text-shadow: #abdae3 1px 1px 1px;
 }

@@ -8,7 +8,7 @@ export default {
   <div id="loading">
     <img
       class="img"
-      src="../assets/loading1.gif"
+      src="../assets/position.gif"
       alt="loading..."
       width="200"
     />
@@ -28,7 +28,6 @@ export default {
 .img {
   position: relative;
   margin: auto;
-  margin-top: 10%;
-  width: 30%;
+  margin-top: 20%;
 }
 </style>

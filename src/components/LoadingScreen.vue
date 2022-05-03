@@ -6,12 +6,7 @@ export default {
 
 <template>
   <div id="loading">
-    <img
-      class="img"
-      src="../assets/position.gif"
-      alt="loading..."
-      width="200"
-    />
+    <img class="img" src="../assets/777.gif" alt="loading..." width="200" />
   </div>
 </template>
 
@@ -19,7 +14,7 @@ export default {
 #loading {
   position: absolute;
   z-index: 1000;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   height: 100vh;
   width: 100vw;
   text-align: center;
@@ -28,6 +23,7 @@ export default {
 .img {
   position: relative;
   margin: auto;
-  margin-top: 20%;
+  margin-top: 10%;
+  width: 30%;
 }
 </style>

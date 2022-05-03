@@ -490,7 +490,7 @@ export default {
     // after the component instance has been mounted,
     setTimeout(
       (_) => (this.isLoading = false), // enable the input
-      2000 // after 1 second
+      3000 // after 1 second
     );
   },
   methods: {

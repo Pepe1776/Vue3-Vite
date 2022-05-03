@@ -479,7 +479,7 @@ export default {
       isShow4: false,
       isShow5: false,
       isShow6: false,
-      isDark: false,
+      isDark: true,
     };
   },
   methods: {
@@ -965,6 +965,9 @@ svg.dark-mode #clouds {
   }
   .main_cont {
     display: none;
+    background: linear-gradient(-45deg, #9e0404, #8a6501, #853202, #000000);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
   }
   .modal {
     width: 100vw;
@@ -1032,13 +1035,14 @@ svg.dark-mode #clouds {
 }
 .dark-mode {
   background: #1a1a1a;
-   background: linear-gradient(-45deg, #566502, #2a1f02, #3b1601, #000000);
+  background: linear-gradient(-45deg, #566502, #2a1f02, #3b1601, #000000);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   color: #ffffff;
   text-shadow: #abdae3 1px 1px 1px;
 }
 .dark-toggle {
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;

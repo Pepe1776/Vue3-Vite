@@ -54,6 +54,10 @@ export default {
   box-sizing: border-box;
   padding: 0;
 }
+.title {
+  font-family: "Water Brush", cursive;
+  font-size: 11rem;
+}
 
 @media (max-width: 768px) {
   .main_cont {
@@ -62,7 +66,7 @@ export default {
     width: 100%;
   }
   .title {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     margin-top: 0%;
   }
 
@@ -155,10 +159,7 @@ export default {
   filter: blur(60px);
   box-shadow: 10px 10px 30px #f6f6f6;
 }
-.title {
-  font-family: "Water Brush", cursive;
-  font-size: 11rem;
-}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 8s ease;

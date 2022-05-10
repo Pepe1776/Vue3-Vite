@@ -35,6 +35,8 @@ export default {
 </template>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -46,8 +48,13 @@ export default {
     background-position: 0% 50%;
   }
 }
- {
+
+#app {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
+
 @media (max-width: 768px) {
   .main_cont {
     display: flex;
@@ -58,6 +65,7 @@ export default {
     font-size: 3.5rem;
     margin-top: 0%;
   }
+
   .btn3 {
     margin: 0;
     padding: 0;
@@ -80,7 +88,6 @@ export default {
   }
   #tag {
     font-size: 1.5rem;
-
   }
 }
 
@@ -147,6 +154,10 @@ export default {
   opacity: 0.2;
   filter: blur(60px);
   box-shadow: 10px 10px 30px #f6f6f6;
+}
+.title {
+  font-family: "Water Brush", cursive;
+  font-size: 11rem;
 }
 .fade-enter-active,
 .fade-leave-active {

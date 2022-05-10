@@ -12,15 +12,15 @@ export default {
   <main class="main_cont">
     <transition appear name="fade2" mode="out-in">
       <div class="header">
-        <h1>
+        <h1 class="title">
           Design to <br />
           Deployment
         </h1>
       </div>
     </transition>
     <div class="nav">
-      <router-link class="btn3" to="main">Projects</router-link>
-      <a href="mailto:justinp@aevio.com" class="btn3">Contact</a>
+      <router-link class="btn3" id="tag" to="main">Projects</router-link>
+      <a href="mailto:justinp@aevio.com" id="tag" class="btn3 tag">Contact</a>
     </div>
     <transition appear name="fade" mode="out-in">
       <div class="hero">
@@ -47,8 +47,43 @@ export default {
   }
 }
  {
- 
 }
+@media (max-width: 768px) {
+  .main_cont {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  .title {
+    font-size: 3.5rem;
+    margin-top: 0%;
+  }
+  .btn3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+  }
+  .nav {
+    font-size: 1.5rem;
+    opacity: 0.3;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: calc(1 - 0.5 * (100vh - 100%));
+  }
+  .hero {
+    flex-grow: 1;
+    width: fit-content;
+    margin-top: 30%;
+  }
+  #tag {
+    font-size: 1.5rem;
+
+  }
+}
+
 .main {
   position: relative;
   height: 100vh;
@@ -79,7 +114,6 @@ export default {
   top: 69%;
   left: 60%;
   transform: translate(-50%, -50%);
-  rotate: 90deg;
   z-index: 2;
 }
 .nav {

@@ -1,6 +1,5 @@
 <template class="app" id="app" :class="isDark ? 'dark-mode' : ''">
   <div class="main_cont" :class="isDark ? 'dark-mode' : ''">
- 
     <LoadingScreen v-show="isLoading"></LoadingScreen>
     <!-- <button @click="isDark = !isDark" class="dark-toggle">
       <Icon
@@ -17,12 +16,12 @@
   </div>
 
   <div class="morph" :class="isDark ? 'dark-mode' : ''">
-        <router-link class="btn3" to="/">Home</router-link>
+    <router-link class="btn3" to="/">Home</router-link>
 
-   <Transition :duration="1050" name="fade" appear>
+    <Transition :duration="1050" name="fade" appear>
       <div class="btn_row">
-        <div class="title">J Parker Dev </div>
-    
+        <div class="title">J Parker Dev</div>
+
         <h3 class="proj">Projects</h3>
         <button @click="isShow5 = !isShow5" id="vue" class="btn bb4 tooltip">
           <Icon class="bolt" style="font-size: 4em" icon="logos-vue" />
@@ -685,9 +684,9 @@ svg.dark-mode #clouds {
 }
 
 .btn3 {
-    position: absolute;
-    top: 3%;
-    left: 3%;
+  position: absolute;
+  top: 3%;
+  left: 3%;
   display: grid;
   place-items: center;
   cursor: pointer;
@@ -715,7 +714,7 @@ svg.dark-mode #clouds {
 
 .btn:hover,
 .btn2:hover,
-.btn3:hover, 
+.btn3:hover,
 .linki:hover {
   outline: 2px solid #f9f8f5;
   box-shadow: 17px 17px 24px #febc05, -17px -17px 24px #febc05;
@@ -784,7 +783,7 @@ svg.dark-mode #clouds {
   width: 100vw;
   height: 100vh;
   inset: 0;
-  background: linear-gradient(-45deg, #d9ff00, #ffbc04, #ff5f03, #ff0000);
+  background: linear-gradient(-45deg, #70caf0, #5f74fc, #44fcb5, #f43de1);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
@@ -823,7 +822,8 @@ svg.dark-mode #clouds {
   top: 20%;
   left: 15%;
   border-radius: 52px;
-  background: linear-gradient(145deg, #8a1414b7, #1e1d1dc0);
+  animation: gradient 15s ease infinite;
+  /* background: linear-gradient(-45deg, #70caf0, #5f74fc, #44fcb5, #f43de1); */
   box-shadow: 15px 15px 28px #ff8400, -15px -15px 28px #fafe058b;
 }
 
@@ -994,7 +994,7 @@ svg.dark-mode #clouds {
     margin: 0;
     display: flex;
     flex-direction: column;
-    background: black;
+    background: linear-gradient(-45deg, #70caf0, #5f74fc, #44fcb5, #f43de1);
   }
   .proj {
     display: none;
@@ -1005,7 +1005,7 @@ svg.dark-mode #clouds {
   }
   .main_cont {
     display: none;
-    background: linear-gradient(-45deg, #9e0404, #8a6501, #853202, #000000);
+    background: linear-gradient(-45deg, #70caf0, #5f74fc, #44fcb5, #f43de1);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
   }
@@ -1075,7 +1075,7 @@ svg.dark-mode #clouds {
 }
 .dark-mode {
   background: #1a1a1a;
-  background: linear-gradient(-45deg, #566502, #2a1f02, #3b1601, #000000);
+  background: linear-gradient(-45deg, #006a98, #0021f4, #007a4b, #740068);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   color: #ffffff;

@@ -696,7 +696,7 @@ svg.dark-mode #clouds {
   margin-top: ;
   font-size: 2em;
   padding: 5px;
-  width: 10%;
+  width: 30%;
 
   -webkit-border-radius: 29px;
   border-radius: 29px;

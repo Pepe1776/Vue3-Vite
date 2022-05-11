@@ -696,7 +696,7 @@ svg.dark-mode #clouds {
   margin-top: ;
   font-size: 2em;
   padding: 5px;
-  width: 30%;
+  width: 10%;
 
   -webkit-border-radius: 29px;
   border-radius: 29px;
@@ -977,6 +977,9 @@ svg.dark-mode #clouds {
     align-items: center;
     margin: 0;
     /* margin-top: 310%; */
+  }
+  .btn3 {
+    width: 30%;
   }
   .ctc {
     display: flex;

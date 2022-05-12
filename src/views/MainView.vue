@@ -690,7 +690,9 @@ svg.dark-mode #clouds {
   display: grid;
   place-items: center;
   cursor: pointer;
-  color: #ffdd00;
+  color: #030303d2;
+  text-shadow: #e1ff00 0px 0px 10px;
+  font-family: anton;
   opacity: 0.6;
   border: none;
   margin-top: ;
@@ -773,9 +775,10 @@ svg.dark-mode #clouds {
 .dial_row {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: space-evenly;
-  margin-left: 5%;
+  justify-content: space-between;
+  align-items: space-between;
+  margin: 10%;
+  padding: 5%;
 }
 
 .main_cont {
@@ -807,7 +810,7 @@ svg.dark-mode #clouds {
   align-items: center;
   font-size: 5em;
   font-weight: 900;
-  color: #d7d2d2;
+  color: #000000;
   text-shadow: 2px 2px 8px #ff8400, 2px 2px 8px #fafe058b, 8px 8px 18px #f8fafb,
     4px 4px 8px #2e2e2e;
 }
@@ -849,14 +852,16 @@ svg.dark-mode #clouds {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffffd2;
-  background: #fef60546;
-  box-shadow: 0 8px 32px 0 #fff;
+  color: #000000d2;
+  text-shadow: #e1ff00 0px 0px 10px;
+  background: #fef60500;
+  box-shadow: 17px 17px 24px #fafe058b, -17px 17px 24px #fc934c;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  font-family: anton;
 }
 
 /* modal */
@@ -967,6 +972,13 @@ svg.dark-mode #clouds {
 }
 .title {
   display: none;
+}
+.linki {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  margin: 5%;
+  padding: 3%;
 }
 
 @media (max-device-width: 1400px) {
@@ -1085,6 +1097,9 @@ svg.dark-mode #clouds {
   text-shadow: #abdae3 1px 1px 1px;
 }
 .dark-toggle {
+  position: absolute;
+  top: 3%;
+  right: 3%;
   background: transparent;
   display: flex;
   justify-content: center;

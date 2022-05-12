@@ -18,6 +18,11 @@ export default {
         </h1>
       </div>
     </transition>
+    <transition appear name="fade2" mode="out-in">
+      <div class="header2">
+        <h2 class="title2">J Parker Development</h2>
+      </div>
+    </transition>
     <div class="nav">
       <router-link class="btn3" id="tag" to="main">Projects</router-link>
       <a href="mailto:justinp@aevio.com" id="tag" class="btn3 tag">Contact</a>
@@ -29,6 +34,14 @@ export default {
     </transition>
     <transition appear name="fade" mode="out-in">
       <div class="bubble"></div>
+    </transition>
+    <transition appear name="fade3" mode="out-in">
+      <div class="info_bubble">
+        <div class="info">
+          Custom tailored websites <br />
+          for any size business
+        </div>
+      </div>
     </transition>
     <div class="footer"></div>
   </main>
@@ -58,6 +71,11 @@ export default {
   font-family: "Water Brush", cursive;
   font-size: 11rem;
 }
+.title2 {
+  font-family: "Anton", sans-serif;
+  font-size: 7rem;
+  color: rgba(0, 0, 0, 0.74);
+}
 
 @media (max-width: 768px) {
   .main_cont {
@@ -67,7 +85,27 @@ export default {
   }
   .title {
     font-size: 4.5rem;
-    margin-top: 0%;
+    margin-top: -40%;
+  }
+  .title2 {
+    font-size: 1.6rem;
+    margin-top: -5%;
+    padding: 10px;
+  }
+  .header2 {
+    display: grid;
+    place-items: center;
+  }
+  .info {
+    font-size: 2rem;
+    position: absolute;
+    top: 80%;
+    left: -120%;
+    width: 100vw;
+  }
+  .info_bubble {
+    display: flex;
+    width: 100vw;
   }
 
   .btn3 {
@@ -79,7 +117,7 @@ export default {
     font-size: 1.5rem;
     opacity: 0.3;
     position: fixed;
-    margin: 0px;
+    margin-top: 10%;
     padding: 0px;
     display: flex;
     justify-content: space-evenly;
@@ -118,6 +156,13 @@ export default {
   top: 30%;
   left: 10%;
   font-size: 7rem;
+  text-shadow: #81f0ff 10px 10px 10px;
+}
+.header2 {
+  position: absolute;
+  z-index: 2;
+  top: 1%;
+  left: 30%;
   text-shadow: #81f0ff 10px 10px 10px;
 }
 .hero {
@@ -159,10 +204,29 @@ export default {
   filter: blur(60px);
   box-shadow: 10px 10px 30px #f6f6f6;
 }
+.info_bubble {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  top: 15%;
+  left: 60%;
+  background: linear-gradient(-45deg, #00b3ff, #0626f4, #00e08a, #ff00e6);
+  border-radius: 0%;
+  display: grid;
+  place-items: center;
+  background-clip: text;
+  font-size: 4rem;
+  color: transparent;
+  font-family: "Anton", sans-serif;
+  text-shadow: 1px 1px 2px rgba(255, 0, 204, 0.166), 0 0 1em rgb(255, 255, 255),
+    0 0 0.2em rgba(138, 92, 255, 0);
+}
+.info {
+}
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 8s ease;
+  transition: opacity 12s ease;
 }
 
 .fade-enter-from,
@@ -171,11 +235,20 @@ export default {
 }
 .fade2-enter-active,
 .fade2-leave-active {
-  transition: opacity 4s ease;
+  transition: opacity 8s ease;
 }
 
 .fade2-enter-from,
 .fade2-leave-to {
+  opacity: 0;
+}
+.fade3-enter-active,
+.fade3-leave-active {
+  transition: opacity 16s ease;
+}
+
+.fade3-enter-from,
+.fade3-leave-to {
   opacity: 0;
 }
 .v-enter-active,

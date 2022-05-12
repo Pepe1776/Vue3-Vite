@@ -1,11 +1,5 @@
-<script lang="ts">
+<script lang="ts" setup>
 // import { Icon } from "@iconify/vue";
-
-export default {
-  components: {
-    // Icon,
-  },
-};
 </script>
 
 <template class="main" id="app">

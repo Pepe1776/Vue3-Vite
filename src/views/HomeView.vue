@@ -70,14 +70,16 @@ export default {
 .title {
   font-family: "Water Brush", cursive;
   font-size: 11rem;
+  flex-shrink: calc(1 - 0.5);
 }
 .title2 {
   font-family: "Anton", sans-serif;
   font-size: 7rem;
   color: rgba(0, 0, 0, 0.74);
+  flex-shrink: calc(1 - 0.5);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .main_cont {
     display: flex;
     height: 100vh;
@@ -124,9 +126,9 @@ export default {
     flex-grow: calc(1 - 0.5 * (100vh - 100%));
   }
   .hero {
-    flex-grow: 1;
+    flex-grow: 1, 0;
     width: fit-content;
-    margin-top: 30%;
+    margin-top: 33%;
   }
   #tag {
     font-size: 1.5rem;
@@ -167,7 +169,7 @@ export default {
 }
 .hero {
   position: absolute;
-  top: 69%;
+  top: 79%;
   left: 60%;
   transform: translate(-50%, -50%);
   z-index: 2;

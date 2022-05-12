@@ -87,12 +87,14 @@ export default {
   }
   .title {
     font-size: 4.5rem;
-    margin-top: -40%;
+    margin-top: -20%;
+    margin-left: 5%;
   }
   .title2 {
     font-size: 1.6rem;
-    margin-top: -5%;
-    padding: 10px;
+    position: relative;
+    left: -15%;
+    top: 55%;
   }
   .header2 {
     display: grid;
@@ -101,9 +103,10 @@ export default {
   .info {
     font-size: 2rem;
     position: absolute;
-    top: 80%;
-    left: -120%;
+    top: 110%;
+    left: -125%;
     width: 100vw;
+    color: #ffffffba;
   }
   .info_bubble {
     display: flex;
@@ -120,7 +123,8 @@ export default {
     opacity: 0.3;
     position: fixed;
     margin-top: 10%;
-    padding: 0px;
+
+    padding: 20px;
     display: flex;
     justify-content: space-evenly;
     flex-grow: calc(1 - 0.5 * (100vh - 100%));

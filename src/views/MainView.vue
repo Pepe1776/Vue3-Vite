@@ -702,9 +702,9 @@ svg.dark-mode #clouds {
 
   -webkit-border-radius: 29px;
   border-radius: 29px;
-  background: #9605fe1e;
-  -webkit-box-shadow: 17px 17px 24px #ffdd00, -17px -17px 24px #e5fe05cd;
-  box-shadow: 17px 17px 24px #e5fe05, -17px -17px 24px #e5fe05;
+  background: #9605fe00;
+  /* -webkit-box-shadow: 17px 17px 24px #ffdd00, -17px -17px 24px #e5fe05cd; */
+  /* box-shadow: 17px 17px 24px #e5fe05, -17px -17px 24px #e5fe05; */
 }
 .btn:active,
 .btn:focus {
@@ -855,11 +855,11 @@ svg.dark-mode #clouds {
   color: #000000d2;
   text-shadow: #e1ff00 0px 0px 10px;
   background: #fef60500;
-  box-shadow: 17px 17px 24px #fafe058b, -17px 17px 24px #fc934c;
+  /* box-shadow: 17px 17px 24px #fafe058b, -17px 17px 24px #fc934c; */
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
   font-size: 2.5rem;
   font-family: anton;
 }

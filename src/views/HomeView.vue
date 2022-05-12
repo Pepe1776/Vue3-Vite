@@ -216,7 +216,7 @@ export default {
   height: 40%;
   top: 15%;
   left: 60%;
-  background: linear-gradient(-45deg, #00b3ff, #0626f4, #00e08a, #ff00e6);
+  background: linear-gradient(-45deg, #ffffff, #5100ff, #e000dc, #010001);
   border-radius: 0%;
   display: grid;
   place-items: center;

@@ -4,12 +4,11 @@
 
 <template class="main" id="app">
   <main class="main_cont">
+    <div class="title-bubble"></div>
+    <img class="img-bg" src="../assets/touch.jpg" />
     <transition appear name="fade2" mode="out-in">
       <div class="header">
-        <h1 class="title">
-          Design to <br />
-          Deployment
-        </h1>
+        <h1 class="title">Design to Deployment</h1>
       </div>
     </transition>
     <transition appear name="fade2" mode="out-in">
@@ -23,7 +22,7 @@
     </div>
     <transition appear name="fade" mode="out-in">
       <div class="hero">
-        <img src="../assets/iphone_13.png" alt="mobile" />
+        <img class="hero-img" src="../assets/9gu9.gif" alt="mobile" />
       </div>
     </transition>
     <transition appear name="fade" mode="out-in">
@@ -61,18 +60,36 @@
   box-sizing: border-box;
   padding: 0;
 }
+.img-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.5;
+  background-blend-mode: overlay;
+}
 .title {
   font-family: "Water Brush", cursive;
-  font-size: 11rem;
+  font-size: 5rem;
   flex-shrink: calc(1 - 0.5);
+  text-shadow: #81f0ff 0px 4px 12px, rgb(255, 255, 255) 0px 4px 6px;
 }
 .title2 {
   font-family: "Anton", sans-serif;
   font-size: 7rem;
   color: rgba(0, 0, 0, 0.74);
   flex-shrink: calc(1 - 0.5);
+  text-shadow: #81f0ff 0px 4px 12px, rgb(255, 255, 255) 0px 4px 6px;
 }
-
+.title-bubble {
+  width: 60%;
+  height: 25%;
+  background-color: #81f0ff;
+  border-radius: 30%;
+}
 @media (max-width: 900px) {
   .main_cont {
     display: flex;
@@ -80,12 +97,12 @@
     width: 100%;
   }
   .title {
-    font-size: 4.5rem;
-    margin-top: -20%;
+    font-size: 2rem;
+    margin-top: 10%;
     margin-left: 5%;
   }
   .title2 {
-    font-size: 1.6rem;
+    font-size: 2rem;
     position: relative;
     left: -15%;
     top: 55%;
@@ -153,9 +170,9 @@
 .header {
   position: absolute;
   z-index: 2;
-  top: 30%;
-  left: 10%;
-  font-size: 7rem;
+  top: 15%;
+  left: 37%;
+  font-size: 3rem;
   text-shadow: #81f0ff 10px 10px 10px;
 }
 .header2 {
@@ -166,15 +183,20 @@
   text-shadow: #81f0ff 10px 10px 10px;
 }
 .hero {
-  position: absolute;
-  top: 79%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-blend-mode: overlay;
+  opacity: 0.5;
 }
 .nav {
   position: absolute;
   margin-left: 3%;
+  margin-top: -10%;
+  z-index: 5;
 }
 .btn3 {
   display: inline-block;
@@ -206,20 +228,19 @@
 }
 .info_bubble {
   position: absolute;
-  width: 40%;
-  height: 40%;
-  top: 15%;
-  left: 60%;
-  background: linear-gradient(-45deg, #ffffff, #5100ff, #e000dc, #010001);
-  border-radius: 0%;
-  display: grid;
-  place-items: center;
-  background-clip: text;
-  font-size: 4rem;
-  color: transparent;
-  font-family: "Anton", sans-serif;
-  text-shadow: 1px 1px 2px rgba(255, 0, 204, 0.166), 0 0 1em rgb(255, 255, 255),
-    0 0 0.2em rgba(138, 92, 255, 0);
+  top: 80%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  font-size: 5rem;
+  font-family: "Water Brush", cursive;
+  text-shadow: #81f0ff 0px 4px 12px, rgb(255, 255, 255) 0px 4px 6px;
 }
 .info {
 }

@@ -98,14 +98,14 @@
   }
   .title {
     font-size: 2rem;
-    margin-top: 10%;
+    margin-top: 15%;
     margin-left: 5%;
   }
   .title2 {
     font-size: 2rem;
     position: relative;
     left: -15%;
-    top: 55%;
+    top: 50%;
   }
   .header2 {
     display: grid;
@@ -134,7 +134,7 @@
     opacity: 0.3;
     position: fixed;
     margin-top: 10%;
-
+    top: 40%;
     padding: 20px;
     display: flex;
     justify-content: space-evenly;

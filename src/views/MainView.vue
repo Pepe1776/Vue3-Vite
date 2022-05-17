@@ -1002,7 +1002,7 @@ svg.dark-mode #clouds {
     justify-content: center;
     align-items: center;
     margin: 0;
-    margin-top: 50%;
+    margin-top: 0%;
     /* margin-top: 310%; */
   }
   .title_cont_title {

@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-// import { Icon } from "@iconify/vue";
+import { Icon } from "@iconify/vue";
+
 </script>
 
 <template class="main" id="app">
@@ -44,7 +45,21 @@
         </div>
       </div>
     </transition>
-    <div class="footer"></div>
+    <div class="footer">
+      <a href="https://twitter.com/JNotquery" class="">
+        <Icon class="bolt linki" style="font-size: 4em" icon="logos-twitter" />
+      </a>
+      <a href="https://instagram.com/J_Not_query" class="">
+        <Icon
+          class="bolt linki"
+          style="font-size: 4em"
+          icon="logos-instagram"
+        />
+      </a>
+      <a href="https://www.linkedin.com/in/justin-parker-849356178/" class="">
+        <Icon class="bolt linki" style="font-size: 4em" icon="logos-linkedin" />
+      </a>
+    </div>
   </main>
 </template>
 
@@ -125,6 +140,18 @@
   flex-shrink: calc(1 - 0.5);
   text-shadow: #81f0ff -4px 4px 8px, rgb(255, 255, 255) -4px 4px 2px;
 }
+.footer {
+  position: absolute;
+  bottom: 0%;
+  left: 4%;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 6;
+}
 @media (max-width: 900px) {
   .main_cont {
     display: flex;
@@ -188,6 +215,10 @@
   }
   #tag {
     font-size: 1.5rem;
+  }
+  .footer {
+    font-size: 0.5rem;
+    bottom: 60%;
   }
 }
 

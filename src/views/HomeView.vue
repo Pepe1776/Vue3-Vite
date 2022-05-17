@@ -16,8 +16,16 @@
         <h2 class="title2">J Parker Development</h2>
       </div>
     </transition>
+    <div class="links">
+      <a class="links-link" href="http://aevio-ch5.netlify.app"
+        >Creston Mobile Interface</a
+      >
+      <a class="links-link" href="http://ancestral.vercel.app"
+        >Ancestral Restaurant</a
+      >
+    </div>
     <div class="nav">
-      <router-link class="btn3" id="tag" to="main">Projects</router-link>
+      <router-link class="btn3" id="tag" to="main">Older Projects</router-link>
       <a href="mailto:justinp@aevio.com" id="tag" class="btn3 tag">Contact</a>
     </div>
     <transition appear name="fade" mode="out-in">
@@ -79,6 +87,10 @@
 }
 .title2 {
   font-family: "Anton", sans-serif;
+  border: #00ff95 solid 2px;
+  padding: 2%;
+  font-size: 2rem;
+  text-align: center;
   font-size: 7rem;
   color: rgba(0, 0, 0, 0.74);
   flex-shrink: calc(1 - 0.5);
@@ -90,6 +102,29 @@
   background-color: #81f0ff;
   border-radius: 30%;
 }
+.links {
+  position: absolute;
+  top: 40%;
+  left: 42%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-left: -34%;
+  z-index: 6;
+}
+.links-link {
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  border: #00ff95 solid 2px;
+  padding: 2%;
+  font-size: 2rem;
+  margin: 20px;
+  color: rgb(8, 25, 68);
+  flex-shrink: calc(1 - 0.5);
+  text-shadow: #81f0ff -4px 4px 8px, rgb(255, 255, 255) -4px 4px 2px;
+}
 @media (max-width: 900px) {
   .main_cont {
     display: flex;
@@ -98,14 +133,14 @@
   }
   .title {
     font-size: 2rem;
-    margin-top: 15%;
-    margin-left: 5%;
+    margin-top: 25%;
+    margin-left: -20%;
   }
   .title2 {
-    font-size: 2rem;
+    font-size: 3rem;
     position: relative;
     left: -15%;
-    top: 50%;
+    top: 10%;
   }
   .header2 {
     display: grid;
@@ -131,18 +166,24 @@
   }
   .nav {
     font-size: 1.5rem;
-    opacity: 0.3;
+
+    opacity: 0.5;
     position: fixed;
     margin-top: 10%;
-    top: 40%;
+    top: 75%;
+    left: -15%;
     padding: 20px;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     flex-grow: calc(1 - 0.5 * (100vh - 100%));
+  }
+  .nav > a {
+    border: #00ff95 solid 2px;
   }
   .hero {
     flex-grow: 1, 0;
-    width: fit-content;
+
     margin-top: 33%;
   }
   #tag {
@@ -191,6 +232,7 @@
   object-fit: cover;
   background-blend-mode: overlay;
   opacity: 0.5;
+  margin-left: 0%;
 }
 .nav {
   position: absolute;

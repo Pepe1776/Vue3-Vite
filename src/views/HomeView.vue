@@ -96,6 +96,7 @@ import { Icon } from "@iconify/vue";
 }
 .title {
   font-family: "Water Brush", cursive;
+  margin-top: 40%;
   font-size: 5rem;
   flex-shrink: calc(1 - 0.5);
   text-shadow: #81f0ff 0px 4px 12px, rgb(255, 255, 255) 0px 4px 6px;
@@ -219,6 +220,7 @@ import { Icon } from "@iconify/vue";
   .footer {
     font-size: 0.5rem;
     bottom: 60%;
+    left: 0;
   }
 }
 

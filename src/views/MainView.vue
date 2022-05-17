@@ -1006,8 +1006,9 @@ svg.dark-mode #clouds {
     margin: 0;
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    height: 150vh;
     margin-top: 0%;
+    
     /* background: linear-gradient(-45deg, #70caf0, #5f74fc, #44fcb5, #f43de1); */
   }
   .proj {

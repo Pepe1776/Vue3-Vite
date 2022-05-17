@@ -134,12 +134,12 @@
   .title {
     font-size: 2rem;
     margin-top: 25%;
-    margin-left: -20%;
+    margin-left: -28%;
   }
   .title2 {
     font-size: 3rem;
     position: relative;
-    left: -15%;
+    left: -20%;
     top: 10%;
   }
   .header2 {
@@ -250,7 +250,9 @@
   transition: all 0.3s ease;
 }
 .btn3:hover,
-.btn3:active {
+.btn3:active,
+.links-link:hover,
+.links-link:active {
   color: #a5027c;
   text-shadow: #00ff95 0px 4px 2px, #81f0ff 2px 6px 4px;
 }

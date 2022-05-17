@@ -68,28 +68,7 @@
     </div> -->
     <div>
       <div class="dial_row">
-        <h3 class="ctc">Contact</h3>
-        <a href="https://twitter.com/JNotquery" class="">
-          <Icon
-            class="bolt linki"
-            style="font-size: 4em"
-            icon="logos-twitter"
-          />
-        </a>
-        <a href="https://instagram.com/J_Not_query" class="">
-          <Icon
-            class="bolt linki"
-            style="font-size: 4em"
-            icon="logos-instagram"
-          />
-        </a>
-        <a href="https://www.linkedin.com/in/justin-parker-849356178/" class="">
-          <Icon
-            class="bolt linki"
-            style="font-size: 4em"
-            icon="logos-linkedin"
-          />
-        </a>
+       
         <svg
           class="dark-toggle"
           width="120px"
@@ -1047,7 +1026,7 @@ svg.dark-mode #clouds {
   }
   .modal {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     margin-top: 0%;
     margin-left: 0%;
   }
@@ -1077,6 +1056,7 @@ svg.dark-mode #clouds {
   }
   .dial_row {
     flex-direction: column;
+    margin-top: 50%;
   }
   .btn {
     width: 100%;

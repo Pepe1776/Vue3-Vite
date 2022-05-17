@@ -1,5 +1,7 @@
 <template class="app" id="app" :class="isDark ? 'dark-mode' : ''">
   <div class="main_cont" :class="isDark ? 'dark-mode' : ''">
+    <img src="../assets/tri.jpg" class="main-bg" />
+
     <LoadingScreen v-show="isLoading"></LoadingScreen>
     <!-- <button @click="isDark = !isDark" class="dark-toggle">
       <Icon
@@ -484,7 +486,7 @@ export default {
       isShow4: false,
       isShow5: false,
       isShow6: false,
-      isDark: false,
+      isDark: true,
       isLoading: true,
     };
   },
@@ -527,6 +529,16 @@ defineProps({
 body {
   text-align: center;
   user-select: none;
+}
+.main-bg {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  object-fit: fill;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  opacity: 0.3;
 }
 .notShown {
   visibility: hidden !important;
@@ -649,7 +661,7 @@ svg.dark-mode #clouds {
   place-items: center;
   cursor: pointer;
   color: #abdae3;
-  opacity: 0.4;
+  opacity: 0.6;
   border: none;
   margin: 25px;
   font-size: 2em;
@@ -659,8 +671,9 @@ svg.dark-mode #clouds {
   -webkit-border-radius: 29px;
   border-radius: 29px;
   background: #9605fe1e;
+  border: 2px solid #ffdd00;
   -webkit-box-shadow: 17px 17px 24px #ffdd00, -17px -17px 24px #e5fe05cd;
-  box-shadow: 17px 17px 24px #e5fe05, -17px -17px 24px #e5fe05;
+  box-shadow: 17px 17px 24px #000000, -17px -17px 24px #e5fe05;
   transition: height 0.7s, opacity 0.7s;
 }
 
@@ -824,10 +837,11 @@ svg.dark-mode #clouds {
   height: 70%;
   top: 20%;
   left: 15%;
+  z-index: 3;
   border-radius: 52px;
   animation: gradient 15s ease infinite;
   /* background: linear-gradient(-45deg, #70caf0, #5f74fc, #44fcb5, #f43de1); */
-  box-shadow: 15px 15px 28px #ff8400, -15px -15px 28px #fafe058b;
+  box-shadow: 15px 15px 28px #000000, -15px -15px 28px #fafe058b;
 }
 
 .glass {
@@ -988,7 +1002,14 @@ svg.dark-mode #clouds {
     justify-content: center;
     align-items: center;
     margin: 0;
+    margin-top: 50%;
     /* margin-top: 310%; */
+  }
+  .title_cont_title {
+    display: none;
+  }
+  .main-bg {
+    height: 250vh;
   }
   .btn3 {
     width: 30%;
@@ -1003,13 +1024,12 @@ svg.dark-mode #clouds {
     text-shadow: 2px 2px 8px #fe05d996;
   }
   .morph {
-    position: sticky;
-    height: 250vh;
-    width: 100vw;
     margin: 0;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(-45deg, #70caf0, #5f74fc, #44fcb5, #f43de1);
+    height: fit-content;
+    margin-top: 0%;
+    /* background: linear-gradient(-45deg, #70caf0, #5f74fc, #44fcb5, #f43de1); */
   }
   .proj {
     display: none;
@@ -1019,8 +1039,9 @@ svg.dark-mode #clouds {
     transform: translate(-80%, -40%); */
   }
   .main_cont {
-    display: none;
-    background: linear-gradient(-45deg, #70caf0, #5f74fc, #44fcb5, #f43de1);
+    height: 250vh;
+    /* display: none; */
+    /* background: linear-gradient(-45deg, #70caf0, #5f74fc, #44fcb5, #f43de1); */
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
   }
@@ -1059,7 +1080,9 @@ svg.dark-mode #clouds {
   }
   .btn {
     width: 100%;
-    font-size: 2rem;
+    font-size: 1rem;
+    margin: 0;
+    top: 45%;
   }
   .linki {
     width: 100%;

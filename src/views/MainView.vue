@@ -22,7 +22,7 @@
 
     <Transition :duration="1050" name="fade" appear>
       <div class="btn_row">
-        <div class="title">J Parker Dev</div>
+        <div class="title"></div>
 
         <h3 class="proj">Projects</h3>
         <button @click="isShow5 = !isShow5" id="vue" class="btn bb4 tooltip">
@@ -68,7 +68,6 @@
     </div> -->
     <div>
       <div class="dial_row">
-       
         <svg
           class="dark-toggle"
           width="120px"
@@ -981,7 +980,7 @@ svg.dark-mode #clouds {
     justify-content: center;
     align-items: center;
     margin: 0;
-    margin-top: -90%;
+    margin-top: -150%;
     /* margin-top: 310%; */
   }
   .title_cont_title {
@@ -1008,7 +1007,7 @@ svg.dark-mode #clouds {
     flex-direction: column;
     height: 150vh;
     margin-top: 0%;
-    
+
     /* background: linear-gradient(-45deg, #70caf0, #5f74fc, #44fcb5, #f43de1); */
   }
   .proj {
@@ -1054,6 +1053,9 @@ svg.dark-mode #clouds {
     font-size: 2rem;
     padding: 5px;
     margin: 0;
+  }
+  .title {
+    display: none;
   }
   .dial_row {
     flex-direction: column;

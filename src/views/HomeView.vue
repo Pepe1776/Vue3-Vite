@@ -201,7 +201,7 @@ import { Icon } from "@iconify/vue";
   .title {
     font-size: 2rem;
     margin-top: 35%;
-    margin-left: -28%;
+    margin-left: -25%;
   }
   .title2 {
     font-size: 3rem;
@@ -227,8 +227,11 @@ import { Icon } from "@iconify/vue";
   }
   .links-title {
     font-size: 2rem;
-    margin-left: -6%;
+    margin-left: -8%;
     margin-top: -15%;
+  }
+  .links-link {
+    margin-left: -2%;
   }
 
   .btn3 {
@@ -243,7 +246,7 @@ import { Icon } from "@iconify/vue";
     position: fixed;
     margin-top: 0%;
     top: 70%;
-    left: -15%;
+    left: 15%;
     padding: 20px;
     display: flex;
     justify-content: space-evenly;

@@ -26,8 +26,12 @@
 
         <h3 class="proj">Projects</h3>
         <button @click="isShow5 = !isShow5" id="vue" class="btn bb4 tooltip">
-          <Icon class="bolt" style="font-size: 4em" icon="logos-vue" />
-          <div class="tooltiptext">Vue 3 Portfolio</div>
+          <Icon
+            class="bolt"
+            style="font-size: 4em"
+            icon="emojione-artist-palette"
+          />
+          <div class="tooltiptext">Vue 3 Portfolio Page</div>
         </button>
 
         <button @click="isShow = !isShow" id="mask" class="btn bbb tooltip">
@@ -39,24 +43,32 @@
           <div class="tooltiptext">Web3 Defi Exchange</div>
         </button>
         <button @click="isShow4 = !isShow4" id="vite" class="btn bb2 tooltip">
-          <Icon class="bolt" style="font-size: 4em" icon="logos-vitejs" />
-          <div class="tooltiptext">Three.js Vite Portfolio</div>
-        </button>
-        <button @click="isShow2 = !isShow2" id="react" class="btn bb3 tooltip">
           <Icon
             class="bolt"
             style="font-size: 4em"
-            icon="logos-create-react-app"
+            icon="emojione-alien-monster"
           />
-          <div class="tooltiptext">Web3 DAO React</div>
+          <div class="tooltiptext">Three.js Vite Portfolio</div>
+        </button>
+        <button @click="isShow2 = !isShow2" id="react" class="btn bb3 tooltip">
+          <Icon class="bolt" style="font-size: 4em" icon="cryptocurrency-d" />
+          <div class="tooltiptext">Web3 DAO Project in React</div>
         </button>
 
         <button @click="isShow3 = !isShow3" id="ang" class="btn bb5 tooltip">
-          <Icon class="bolt" style="font-size: 4em" icon="logos-angular-icon" />
+          <Icon
+            class="bolt"
+            style="font-size: 4em"
+            icon="emojione-dollar-banknote"
+          />
           <div class="tooltiptext">Web3Con Nft Project</div>
         </button>
         <button @click="isShow6 = !isShow6" id="fire" class="btn bb6 tooltip">
-          <Icon class="bolt" style="font-size: 4em" icon="logos-firebase" />
+          <Icon
+            class="bolt"
+            style="font-size: 4em"
+            icon="emojione-shallow-pan-of-food"
+          />
           <div class="tooltiptext">Full C.R.U.D. Recipes</div>
         </button>
       </div>
@@ -541,7 +553,7 @@ body {
 
   /* Position the tooltip */
   position: absolute;
-  bottom: -55px;
+  bottom: -95px;
   z-index: 1;
 }
 
@@ -736,7 +748,7 @@ svg.dark-mode #clouds {
   place-content: center;
   grid-template-rows: 3;
   grid-template-columns: 4;
-  grid-gap: 50px;
+  grid-gap: 160px;
 }
 .bbb {
   grid-column: 1;
@@ -840,7 +852,7 @@ svg.dark-mode #clouds {
 .proj {
   position: absolute;
   width: 45%;
-  margin: -95px 12px 15px 15px;
+  margin: -95px 16px 0px 115px;
   display: flex;
   justify-content: center;
   align-items: center;

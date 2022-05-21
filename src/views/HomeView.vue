@@ -18,6 +18,7 @@ import { Icon } from "@iconify/vue";
       </div>
     </transition>
     <div class="links">
+      <h3 class="links-title">Current Projects in the works</h3>
       <a class="links-link" href="http://aevio-ch5.netlify.app"
         >Creston Mobile Interface</a
       >
@@ -60,6 +61,9 @@ import { Icon } from "@iconify/vue";
         <Icon class="bolt linki" style="font-size: 4em" icon="logos-linkedin" />
       </a>
     </div>
+    <div class="footer2">
+      <h3 class="footer2-text">Made by J Parker</h3>
+    </div>
   </main>
 </template>
 
@@ -96,7 +100,7 @@ import { Icon } from "@iconify/vue";
 }
 .title {
   font-family: "Water Brush", cursive;
-  margin-top: 40%;
+  margin-top: 45%;
   font-size: 5rem;
   flex-shrink: calc(1 - 0.5);
   text-shadow: #81f0ff 0px 4px 12px, rgb(255, 255, 255) 0px 4px 6px;
@@ -130,6 +134,14 @@ import { Icon } from "@iconify/vue";
   margin-left: -34%;
   z-index: 6;
 }
+.links-title {
+  font-family: "Anton", sans-serif;
+   border: #00d0ff solid 2px;
+  font-size: 2.3rem;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.74);
+  text-shadow: #81f0ff 0px 4px 12px, rgb(255, 255, 255) 0px 4px 6px;
+}
 .links-link {
   text-align: center;
   font-family: "Anton", sans-serif;
@@ -139,11 +151,15 @@ import { Icon } from "@iconify/vue";
   margin: 20px;
   color: rgb(8, 25, 68);
   flex-shrink: calc(1 - 0.5);
-  text-shadow: #81f0ff -4px 4px 8px, rgb(255, 255, 255) -4px 4px 2px;
+  text-shadow: #81ffa5 -4px 4px 8px, rgb(255, 255, 255) -4px 4px 2px;
+}
+.linki:hover {
+  transition: all 0.5s ease-in-out;
+  box-shadow: #81ffa5 5px -5px 18px, rgb(0, 110, 255) -5px 5px 25px;
 }
 .footer {
   position: absolute;
-  bottom: 0%;
+  top: 0%;
   left: 4%;
   width: 100%;
   height: 10%;
@@ -153,6 +169,29 @@ import { Icon } from "@iconify/vue";
   align-items: center;
   z-index: 6;
 }
+.footer2 {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 6;
+}
+.footer2-text {
+  font-family: "Anton", sans-serif;
+  border: #00ff95 solid 2px;
+  padding: 2%;
+  text-align: center;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.74);
+  flex-shrink: calc(1 - 0.5);
+  text-shadow: #81f0ff 0px 4px 12px, rgb(255, 255, 255) 0px 4px 6px;
+}
+
 @media (max-width: 900px) {
   .main_cont {
     display: flex;
@@ -161,7 +200,7 @@ import { Icon } from "@iconify/vue";
   }
   .title {
     font-size: 2rem;
-    margin-top: 25%;
+    margin-top: 35%;
     margin-left: -28%;
   }
   .title2 {
@@ -197,7 +236,7 @@ import { Icon } from "@iconify/vue";
 
     opacity: 0.5;
     position: fixed;
-    margin-top: 10%;
+    margin-top: 0%;
     top: 75%;
     left: -15%;
     padding: 20px;
@@ -216,10 +255,11 @@ import { Icon } from "@iconify/vue";
   }
   #tag {
     font-size: 1.5rem;
+    margin-top: 0%;
   }
   .footer {
     font-size: 0.5rem;
-    bottom: 60%;
+    bottom: 50%;
     left: 0;
   }
 }
@@ -244,7 +284,7 @@ import { Icon } from "@iconify/vue";
 .header {
   position: absolute;
   z-index: 2;
-  top: 15%;
+  top: 19%;
   left: 37%;
   font-size: 3rem;
   text-shadow: #81f0ff 10px 10px 10px;
@@ -252,7 +292,7 @@ import { Icon } from "@iconify/vue";
 .header2 {
   position: absolute;
   z-index: 2;
-  top: 1%;
+  top: 9%;
   left: 30%;
   text-shadow: #81f0ff 10px 10px 10px;
 }
@@ -270,7 +310,7 @@ import { Icon } from "@iconify/vue";
 .nav {
   position: absolute;
   margin-left: 3%;
-  margin-top: -10%;
+  margin-top: -8%;
   z-index: 5;
 }
 .btn3 {
@@ -286,7 +326,9 @@ import { Icon } from "@iconify/vue";
 .btn3:active,
 .links-link:hover,
 .links-link:active {
+  transition: all 0.3s ease;
   color: #a5027c;
+   box-shadow: #81ffa5 5px -5px 18px, rgb(0, 110, 255) -5px 5px 25px;
   text-shadow: #00ff95 0px 4px 2px, #81f0ff 2px 6px 4px;
 }
 .bubble {
@@ -320,6 +362,12 @@ import { Icon } from "@iconify/vue";
   text-shadow: #81f0ff 0px 4px 12px, rgb(255, 255, 255) 0px 4px 6px;
 }
 .info {
+}
+.footer-text {
+  font-size: 2rem;
+  font-family: "Water Brush", cursive;
+  margin-top: 3rem;
+  color: #81f0ff;
 }
 
 .fade-enter-active,

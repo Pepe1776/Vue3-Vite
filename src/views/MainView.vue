@@ -289,7 +289,7 @@
                   <Icon
                     class="bolt"
                     style="font-size: 5.5em"
-                    icon="logos-create-react-app"
+                    icon="cryptocurrency-d"
                   />
                   <div class="tooltiptext">Visit Site</div>
                 </a>
@@ -331,7 +331,7 @@
                   <Icon
                     class="bolt"
                     style="font-size: 5.5em"
-                    icon="logos-angular-icon"
+                    icon="emojione-dollar-banknote"
                   />
                   <div class="tooltiptext">Visit Site</div>
                 </a>
@@ -369,7 +369,7 @@
                   <Icon
                     class="bolt"
                     style="font-size: 5.5em"
-                    icon="logos-vitejs"
+                    icon="emojione-alien-monster"
                   />
                   <div class="tooltiptext">Visit Site</div>
                 </a>
@@ -408,7 +408,7 @@
                   <Icon
                     class="bolt"
                     style="font-size: 5.5em"
-                    icon="logos-vue"
+                    icon="emojione-artist-palette"
                   />
                   <div class="tooltiptext">Visit Site</div>
                 </a>
@@ -450,7 +450,7 @@
                   <Icon
                     class="bolt"
                     style="font-size: 5.5em"
-                    icon="logos-firebase"
+                    icon="emojione-shallow-pan-of-food"
                   />
                   <div class="tooltiptext">Visit Site</div>
                 </a>

@@ -992,7 +992,8 @@ svg.dark-mode #clouds {
     justify-content: center;
     align-items: center;
     margin: 0;
-    margin-top: -150%;
+    margin-top: -210%;
+    grid-gap: 30px;
     /* margin-top: 310%; */
   }
   .title_cont_title {
@@ -1017,7 +1018,7 @@ svg.dark-mode #clouds {
     margin: 0;
     display: flex;
     flex-direction: column;
-    height: 150vh;
+    height: 100vh;
     margin-top: 0%;
 
     /* background: linear-gradient(-45deg, #70caf0, #5f74fc, #44fcb5, #f43de1); */

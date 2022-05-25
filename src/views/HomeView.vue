@@ -6,7 +6,7 @@ import { Icon } from "@iconify/vue";
 <template class="main" id="app">
   <main class="main_cont">
     <div class="title-bubble"></div>
-    <img class="img-bg" src="../assets/touch.jpg" />
+    <img class="img-bg" src="../assets/outrun-wallpaper.jpg" />
     <transition appear name="fade2" mode="out-in">
       <div class="header">
         <h1 class="title">Design to Deployment</h1>
@@ -119,7 +119,7 @@ import { Icon } from "@iconify/vue";
 .title-bubble {
   width: 60%;
   height: 25%;
-  background-color: #81f0ff;
+  /* background-color: #81f0ff; */
   border-radius: 30%;
 }
 .links {
@@ -159,19 +159,21 @@ import { Icon } from "@iconify/vue";
 }
 .footer {
   position: absolute;
-  top: 0%;
-  left: 4%;
-  width: 100%;
+  top: 85%;
+  left: 0%;
+  padding-left: 160px;
+  width: 100vw;
   height: 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   z-index: 6;
+  background-color: rgba(255, 255, 255, 0.207);
 }
 .footer2 {
   position: absolute;
-  bottom: 0%;
+  bottom: -2%;
   left: 0%;
   width: 100%;
   height: 10%;
@@ -183,10 +185,10 @@ import { Icon } from "@iconify/vue";
 }
 .footer2-text {
   font-family: "Anton", sans-serif;
-  border: #00ff95 solid 2px;
-  padding: 2%;
+ 
+  padding: 5px;
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.74);
   flex-shrink: calc(1 - 0.5);
   text-shadow: #81f0ff 0px 4px 12px, rgb(255, 255, 255) 0px 4px 6px;
@@ -245,7 +247,7 @@ import { Icon } from "@iconify/vue";
     opacity: 0.5;
     position: fixed;
     margin-top: 0%;
-    top: 70%;
+    top: 65%;
     left: 15%;
     padding: 20px;
     display: flex;
@@ -269,6 +271,10 @@ import { Icon } from "@iconify/vue";
     font-size: 0.5rem;
     bottom: 50%;
     left: 0;
+    padding: 0%;
+  }
+  .footer2 {
+
   }
 }
 
@@ -292,7 +298,7 @@ import { Icon } from "@iconify/vue";
 .header {
   position: absolute;
   z-index: 2;
-  top: 19%;
+  top:12%;
   left: 37%;
   font-size: 3rem;
   text-shadow: #81f0ff 10px 10px 10px;
@@ -300,7 +306,7 @@ import { Icon } from "@iconify/vue";
 .header2 {
   position: absolute;
   z-index: 2;
-  top: 9%;
+  top: 0%;
   left: 30%;
   text-shadow: #81f0ff 10px 10px 10px;
 }
@@ -318,8 +324,9 @@ import { Icon } from "@iconify/vue";
 .nav {
   position: absolute;
   margin-left: 3%;
-  margin-top: -8%;
+  margin-top: 0%;
   z-index: 5;
+
 }
 .btn3 {
   display: inline-block;
@@ -344,7 +351,7 @@ import { Icon } from "@iconify/vue";
   top: 45%;
   left: 25%;
   transform: translate(-50%, -50%);
-  background-color: #0395a8;
+  /* background-color: #0395a8; */
   width: 1200px;
   height: 500px;
   border-radius: 50%;
@@ -355,7 +362,7 @@ import { Icon } from "@iconify/vue";
 }
 .info_bubble {
   position: absolute;
-  top: 80%;
+  top: 55%;
   left: 80%;
   transform: translate(-50%, -50%);
   width: 100vw;

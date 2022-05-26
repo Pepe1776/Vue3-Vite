@@ -126,6 +126,18 @@ export default {
 };
 </script>
 <style scoped>
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -136,11 +148,9 @@ export default {
   height: auto;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(
-    to bottom right,
-    rgb(0, 0, 0),
-    rgba(8, 0, 255, 0.764)
-  );
+  animation: gradient 15s ease infinite;
+  transition: background 0.3s ease-in-out;
+  background: linear-gradient(-45deg, #3e024f, #8c0dc7, #5f74fc, #100494);
 }
 .img {
   width: 80%;

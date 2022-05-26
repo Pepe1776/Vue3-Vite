@@ -339,13 +339,15 @@ export default {
 }
 @media (max-width: 768px) {
   .img {
-    width: 100%;
+    width: 80%;
     height: auto;
     object-fit: cover;
     border-radius: 10%;
     margin: auto;
     z-index: 1;
     opacity: 0.7;
+    margin-right: 24%;
+    margin-top: 15%;
     justify-content: center;
   }
   .title {
@@ -365,7 +367,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 1%;
+    margin-top: 10%;
     top: 15%;
     left: 0;
     z-index: 1;

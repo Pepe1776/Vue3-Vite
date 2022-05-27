@@ -55,49 +55,73 @@
           class="icon anc"
           icon="emojione-shallow-pan-of-food"
       /></a>
-      <img
-        v-if="active"
-        class="defi-img tooltiptext"
-        src="../assets/defi.jpg"
-        alt="defi"
-      />
-      <h3 v-if="active" class="label label1">Web3 Defi</h3>
-      <img
-        v-if="active2"
-        src="../assets/nft.jpg"
-        alt="nft"
-        class="defi-img nft-img"
-      />
-      <h3 v-if="active2" class="label label2">Gratitude NFT</h3>
-      <img
-        v-if="active3"
-        src="../assets/aev.jpg"
-        alt="nft"
-        class="defi-img aev-img"
-      />
-      <h3 v-if="active3" class="label label3">Mobile Crestron</h3>
-      <img
-        v-if="active4"
-        src="../assets/jpa.jpg"
-        alt="nft"
-        class="defi-img jpa-img"
-        label="J Parker"
-      />
-      <h3 v-if="active4" class="label label4">J Parker Portfolio</h3>
-      <img
-        v-if="active5"
-        src="../assets/anc.jpg"
-        alt="nft"
-        class="defi-img anc-img"
-      />
-      <h3 v-if="active5" class="label label5">Ancestral Restaurant</h3>
-      <img
-        v-if="active6"
-        src="../assets/rec.jpg"
-        alt="nft"
-        class="defi-img rec-img"
-      />
-      <h3 v-if="active6" class="label label6">Book of Recipes</h3>
+      <transition appear name="fade" mode="out-in">
+        <img
+          v-if="active"
+          class="defi-img tooltiptext"
+          src="../assets/defi.jpg"
+          alt="defi"
+        />
+      </transition>
+      <transition appear name="fade" mode="out-in">
+        <h3 v-if="active" class="label label1">Web3 Defi</h3>
+      </transition>
+      <transition appear name="fade" mode="out-in">
+        <img
+          v-if="active2"
+          src="../assets/nft.jpg"
+          alt="nft"
+          class="defi-img nft-img"
+        />
+      </transition>
+      <transition appear name="fade" mode="out-in">
+        <h3 v-if="active2" class="label label2">Gratitude NFT</h3>
+      </transition>
+      <transition appear name="fade" mode="out-in">
+        <img
+          v-if="active3"
+          src="../assets/aev.jpg"
+          alt="nft"
+          class="defi-img aev-img"
+        />
+      </transition>
+      <transition appear name="fade" mode="out-in">
+        <h3 v-if="active3" class="label label3">Mobile Crestron</h3>
+      </transition>
+      <transition appear name="fade" mode="out-in">
+        <img
+          v-if="active4"
+          src="../assets/jpa.jpg"
+          alt="nft"
+          class="defi-img jpa-img"
+          label="J Parker"
+        />
+      </transition>
+      <transition appear name="fade" mode="out-in">
+        <h3 v-if="active4" class="label label4">J Parker Portfolio</h3>
+      </transition>
+      <transition appear name="fade" mode="out-in">
+        <img
+          v-if="active5"
+          src="../assets/anc.jpg"
+          alt="nft"
+          class="defi-img anc-img"
+        />
+      </transition>
+      <transition appear name="fade" mode="out-in">
+        <h3 v-if="active5" class="label label5">Ancestral Restaurant</h3>
+      </transition>
+      <transition appear name="fade" mode="out-in">
+        <img
+          v-if="active6"
+          src="../assets/rec.jpg"
+          alt="nft"
+          class="defi-img rec-img"
+        />
+      </transition>
+      <transition appear name="fade" mode="out-in">
+        <h3 v-if="active6" class="label label6">Book of Recipes</h3>
+      </transition>
     </div>
     <div class="bottom">Made By J Parker Dev</div>
     <router-link to="/home" class="home">Home V1</router-link>
@@ -148,20 +172,23 @@ export default {
   height: auto;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(-45deg, #70caf0, #5f74fc, #961dec, #146dcb);
+  background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   transition: background 0.3s ease-in-out;
-  background: linear-gradient(-45deg, #3e024f, #8c0dc7, #5f74fc, #100494);
 }
 .img {
-  width: 80%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 10%;
-  margin-top: 2%;
-  top: 25%;
-  left: 11%;
+  box-shadow: #ffffff -15px 14px 18px, rgb(10, 4, 192) -20px 14px 18px;
+
+  margin-top: -20%;
+  top: 0%;
+  left: 0%;
   z-index: 1;
-  opacity: 0.7;
+  opacity: 0.3;
 }
 .title {
   width: 100%;
@@ -169,10 +196,10 @@ export default {
   justify-content: center;
   margin-top: 1%;
   align-items: center;
-  text-shadow: #000000 -5px 4px 12px, rgb(255, 0, 230) -10px 4px 16px;
-  font-size: 7rem;
-  font-family: "Anton", cursive;
-  color: #ff0037;
+  text-shadow: #5c00fc -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
+  font-size: 10rem;
+  font-family: "anton", cursive;
+  color: #fdfcfd;
   opacity: 0.7;
 }
 .nav {
@@ -183,21 +210,23 @@ export default {
   margin-top: 1%;
   top: 15%;
   left: 0;
-  z-index: 1;
+  z-index: 2;
 }
 .btn {
   width: 100%;
-  text-shadow: #000000 -5px 4px 12px, rgb(255, 0, 230) -10px 4px 16px;
+  text-shadow: #5c00fc -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
   font-size: 3rem;
   font-family: "Anton", cursive;
-  color: #ff0037;
+  color: #fdfcfd;
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
 }
 .icon {
   width: 100%;
   text-shadow: #000000 -5px 4px 12px, rgb(255, 0, 230) -10px 4px 16px;
-  font-size: 7.5rem;
+  border: #70caf070 solid 2px;
+  padding: 15px;
+  font-size: 10.5rem;
   font-family: "Anton", cursive;
   color: #00ffb7;
   opacity: 0.7;
@@ -208,6 +237,7 @@ export default {
 .icon:hover {
   opacity: 1;
   transform: scale(1.1);
+  border: #70caf0f6 solid 3px;
 }
 .home:hover {
   opacity: 1;
@@ -226,8 +256,9 @@ export default {
   height: auto;
   object-fit: cover;
   border-radius: 30%;
-  margin-top: 2%;
+  margin-top: -38%;
   z-index: 1;
+  box-shadow: #ffffff -15px 14px 18px, rgb(10, 4, 192) -20px 14px 18px;
   opacity: 0.9;
 }
 .footer {
@@ -239,15 +270,15 @@ export default {
 }
 .footer-title {
   width: 100%;
-  text-shadow: #000000 -5px 4px 12px, rgb(255, 0, 230) -10px 4px 16px;
+  text-shadow: #5c00fc -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
   font-size: 5rem;
   font-family: "Anton", cursive;
-  color: #ff0037;
+  color: #fdfcfd;
   opacity: 0.7;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 .defi-img {
   width: 30%;
@@ -256,7 +287,7 @@ export default {
   border-radius: 10%;
   margin-top: 2%;
   position: absolute;
-  top: 331%;
+  top: 209%;
   left: 3%;
   z-index: 1;
   opacity: 0.8;
@@ -281,52 +312,53 @@ export default {
 }
 .label {
   font-size: 3rem;
-  color: #ff0037;
+  color: #e6e3e3;
   opacity: 0.7;
-  text-shadow: #000000 -5px 4px 12px, rgb(255, 0, 230) -10px 4px 16px;
+  text-shadow: #5c00fc -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
 }
 .label1 {
   position: absolute;
-  top: 329%;
+  top: 205%;
   left: 8%;
   z-index: 1;
 }
 .label2 {
   position: absolute;
-  top: 329%;
+  top: 205%;
   left: 21.5%;
   z-index: 1;
 }
 .label3 {
   position: absolute;
-  top: 329%;
+  top: 205%;
   left: 35.3%;
   z-index: 1;
 }
 .label4 {
   position: absolute;
-  top: 329%;
+  top: 205%;
   left: 51%;
   z-index: 1;
 }
 .label5 {
   position: absolute;
-  top: 329%;
+  top: 205%;
   left: 64%;
   z-index: 1;
 }
 .label6 {
   position: absolute;
-  top: 329%;
+  top: 205%;
   left: 81%;
   z-index: 1;
 }
 .bottom {
   width: 100%;
-  text-shadow: #000000 -5px 4px 12px, rgb(255, 0, 230) -10px 4px 16px;
+  text-shadow: #5c00fc -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
+
   font-size: 4rem;
   font-family: "Anton", cursive;
-  color: #ff0037;
+  color: #beb8b9;
   opacity: 0.7;
   display: flex;
   justify-content: center;
@@ -340,10 +372,11 @@ export default {
   align-items: center;
   margin-bottom: 10%;
   width: 100%;
-  text-shadow: #000000 -5px 4px 12px, rgb(255, 0, 230) -10px 4px 16px;
+  text-shadow: #5c00fc -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
+
   font-size: 3rem;
   font-family: "Anton", cursive;
-  color: #ff0037;
+  color: #beb8b9;
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
 }
@@ -410,5 +443,14 @@ export default {
 .icon:hover {
   opacity: 1;
   transform: scale(1.1);
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

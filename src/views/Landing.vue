@@ -389,9 +389,12 @@ export default {
     margin: auto;
     z-index: 1;
     opacity: 0.7;
-    margin-right: 24%;
+    margin-right: 10%;
     margin-top: 15%;
     justify-content: center;
+  }
+  .logo {
+    margin-top: 0%;
   }
   .title {
     width: 100%;
@@ -399,10 +402,9 @@ export default {
     justify-content: center;
     margin-top: 1%;
     align-items: center;
-    text-shadow: #000000 -5px 4px 12px, rgb(255, 0, 230) -10px 4px 16px;
     font-size: 4rem;
     font-family: "Anton", cursive;
-    color: #ff0037;
+  
     opacity: 0.7;
   }
   .nav {
@@ -417,10 +419,8 @@ export default {
   }
   .btn {
     width: 100%;
-    text-shadow: #000000 -5px 4px 12px, rgb(255, 0, 230) -10px 4px 16px;
     font-size: 3rem;
     font-family: "Anton", cursive;
-    color: #ff0037;
     opacity: 0.7;
     transition: all 0.3s ease-in-out;
   }

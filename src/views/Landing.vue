@@ -123,6 +123,22 @@
         <h3 v-if="active6" class="label label6">Book of Recipes</h3>
       </transition>
     </div>
+    <div class="footer-last">
+      <a href="https://instagram.com/J_Not_query" class="">
+        <Icon
+          class="bolt linki"
+          style="font-size: 4em"
+          icon="logos-instagram"
+        />
+      </a>
+      <a href="https://twitter.com/JNotquery" class="">
+        <Icon class="bolt linki" style="font-size: 4em" icon="logos-twitter" />
+      </a>
+
+      <a href="https://www.linkedin.com/in/justin-parker-849356178/" class="">
+        <Icon class="bolt linki" style="font-size: 4em" icon="logos-linkedin" />
+      </a>
+    </div>
     <div class="bottom">Made By J Parker Dev</div>
     <router-link to="/home" class="home">Home V1</router-link>
   </div>
@@ -380,6 +396,12 @@ export default {
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
 }
+.footer-last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
 @media (max-width: 768px) {
   .img {
     width: 80%;
@@ -404,7 +426,7 @@ export default {
     align-items: center;
     font-size: 4rem;
     font-family: "Anton", cursive;
-  
+
     opacity: 0.7;
   }
   .nav {
@@ -436,6 +458,10 @@ export default {
   .bottom,
   .home {
     font-size: 2rem;
+  }
+  .footer-last {
+    gap: 5%;
+    font-size: 0.5rem;
   }
 }
 .btn:hover,

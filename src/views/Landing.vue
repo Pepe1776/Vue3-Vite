@@ -154,8 +154,8 @@
     <div class="bottom">Made By J Parker Dev</div>
     <div class="frames">
       <h4 class="frame-title">Ui Designs</h4>
-      <img class="frame" src="../assets/Wb2.jpg" alt="web1" />
-      <img class="frame" src="../assets/Wb3.png" alt="web1" />
+      <img class="frame" src="../assets/wb2.png" alt="web1" />
+      <img class="frame" src="../assets/wb3.png" alt="web1" />
     </div>
     <div class="frames2">
       <img class="frame2" src="../assets/ip2.png" alt="web1" />

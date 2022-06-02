@@ -75,7 +75,7 @@
           alt="defi"
         />
       </transition>
-      <transition appear name="fade" mode="out-in">
+      <transition appear name="fade2" mode="out-in">
         <h3 v-if="active" class="label label1">Web3 Defi</h3>
       </transition>
       <transition appear name="fade" mode="out-in">
@@ -86,7 +86,7 @@
           class="defi-img nft-img"
         />
       </transition>
-      <transition appear name="fade" mode="out-in">
+      <transition appear name="fade2" mode="out-in">
         <h3 v-if="active2" class="label label2">Gratitude NFT</h3>
       </transition>
       <transition appear name="fade" mode="out-in">
@@ -97,7 +97,7 @@
           class="defi-img aev-img"
         />
       </transition>
-      <transition appear name="fade" mode="out-in">
+      <transition appear name="fade2" mode="out-in">
         <h3 v-if="active3" class="label label3">Mobile Crestron</h3>
       </transition>
       <transition appear name="fade" mode="out-in">
@@ -109,7 +109,7 @@
           label="J Parker"
         />
       </transition>
-      <transition appear name="fade" mode="out-in">
+      <transition appear name="fade2" mode="out-in">
         <h3 v-if="active4" class="label label4">J Parker Portfolio</h3>
       </transition>
       <transition appear name="fade" mode="out-in">
@@ -120,7 +120,7 @@
           class="defi-img anc-img"
         />
       </transition>
-      <transition appear name="fade" mode="out-in">
+      <transition appear name="fade2" mode="out-in">
         <h3 v-if="active5" class="label label5">Ancestral Restaurant</h3>
       </transition>
       <transition appear name="fade" mode="out-in">
@@ -131,7 +131,7 @@
           class="defi-img rec-img"
         />
       </transition>
-      <transition appear name="fade" mode="out-in">
+      <transition appear name="fade2" mode="out-in">
         <h3 v-if="active6" class="label label6">Book of Recipes</h3>
       </transition>
     </div>
@@ -567,6 +567,15 @@ export default {
 
 .fade-enter-from,
 .fade-leave-to {
+  opacity: 0;
+}
+.fade2-enter-active,
+.fade2-leave-active {
+  transition: opacity 1s ease-in-out;
+}
+
+.fade2-enter-from,
+.fade2-leave-to {
   opacity: 0;
 }
 </style>

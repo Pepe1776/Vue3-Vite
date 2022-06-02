@@ -17,6 +17,8 @@
         ><Icon
           @mouseover="active = !active"
           @mouseout="active = !active"
+          @touchstart="active = !active"
+          @touchend="active = !active"
           class="icon defi"
           icon="cryptocurrency-d"
       /></a>
@@ -24,6 +26,8 @@
         ><Icon
           @mouseover="active2 = !active2"
           @mouseout="active2 = !active2"
+          @touchstart="active2 = !active2"
+          @touchend="active2 = !active2"
           class="icon nft"
           icon="logos-metamask-icon"
       /></a>
@@ -31,6 +35,8 @@
         ><Icon
           @mouseover="active3 = !active3"
           @mouseout="active3 = !active3"
+          @touchstart="active3 = !active3"
+          @touchend="active3 = !active3"
           class="icon cash"
           icon="emojione-mobile-phone"
       /></a>
@@ -38,6 +44,8 @@
         ><Icon
           @mouseover="active4 = !active4"
           @mouseout="active4 = !active4"
+          @touchstart="active4 = !active4"
+          @touchend="active4 = !active4"
           class="icon purp"
           icon="emojione-alien-monster"
       /></a>
@@ -45,6 +53,8 @@
         ><Icon
           @mouseover="active5 = !active5"
           @mouseout="active5 = !active5"
+          @touchstart="active5 = !active5"
+          @touchend="active5 = !active5"
           class="icon rec"
           icon="fxemoji-potoffood"
       /></a>
@@ -52,6 +62,8 @@
         ><Icon
           @mouseover="active6 = !active6"
           @mouseout="active6 = !active6"
+          @touchstart="active6 = !active6"
+          @touchend="active6 = !active6"
           class="icon anc"
           icon="emojione-shallow-pan-of-food"
       /></a>
@@ -140,6 +152,23 @@
       </a>
     </div>
     <div class="bottom">Made By J Parker Dev</div>
+    <div class="frames">
+      <h4 class="frame-title">Ui Designs</h4>
+      <img class="frame" src="../assets/Web 1920 – 1.png" alt="web1" />
+      <img class="frame" src="../assets/Web 1925 – 1.png" alt="web1" />
+    </div>
+    <div class="frames2">
+      <img
+        class="frame2"
+        src="../assets/iPhone 13, 12 Pro Max – 1.png"
+        alt="web1"
+      />
+      <img
+        class="frame2"
+        src="../assets/iPhone 13, 12 Pro Max – 2.png"
+        alt="web1"
+      />
+    </div>
     <router-link to="/home" class="home">Home V1</router-link>
   </div>
 </template>
@@ -386,6 +415,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10%;
   margin-bottom: 10%;
   width: 100%;
   text-shadow: #5c00fc -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
@@ -401,6 +431,48 @@ export default {
   justify-content: center;
   align-items: center;
   gap: 10%;
+}
+.frames {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.frame {
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10%;
+  margin-top: 10%;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+.frame2 {
+  border-radius: 5%;
+}
+.frames2 {
+   width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 10%;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.frame-title {
+  width: 100%;
+  text-shadow: #5c00fc -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
+  font-size: 5rem;
+  font-family: "Anton", cursive;
+  color: #fdfcfd;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
 }
 @media (max-width: 768px) {
   .img {
@@ -453,15 +525,28 @@ export default {
     font-family: "Anton", cursive;
     color: #00ffb7;
     opacity: 0.7;
+    margin-top: 5%;
     transition: all 0.3s ease-in-out;
   }
   .bottom,
   .home {
     font-size: 2rem;
   }
+  .footer {
+    flex-direction: column;
+    gap: 5%;
+  }
   .footer-last {
     gap: 5%;
     font-size: 0.5rem;
+  }
+  .frames2 {
+    flex-direction: column;
+  }
+  .frame2 {
+    object-fit: scale-down;
+    width: 50%;
+    margin-top: 10%;
   }
 }
 .btn:hover,

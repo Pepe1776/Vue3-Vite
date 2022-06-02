@@ -135,6 +135,15 @@
         <h3 v-if="active6" class="label label6">Book of Recipes</h3>
       </transition>
     </div>
+     <div class="frames">
+      <h4 class="frame-title">Ui Designs</h4>
+      <img class="frame" src="../assets/wb2.png" alt="web1" />
+      <img class="frame" src="../assets/wb3.png" alt="web1" />
+    </div>
+    <div class="frames2">
+      <img class="frame2" src="../assets/ip2.png" alt="web1" />
+      <img class="frame2" src="../assets/ip3.png" alt="web1" />
+    </div>
     <div class="footer-last">
       <a href="https://instagram.com/J_Not_query" class="">
         <Icon
@@ -152,15 +161,7 @@
       </a>
     </div>
     <div class="bottom">Made By J Parker Dev</div>
-    <div class="frames">
-      <h4 class="frame-title">Ui Designs</h4>
-      <img class="frame" src="../assets/wb2.png" alt="web1" />
-      <img class="frame" src="../assets/wb3.png" alt="web1" />
-    </div>
-    <div class="frames2">
-      <img class="frame2" src="../assets/ip2.png" alt="web1" />
-      <img class="frame2" src="../assets/ip3.png" alt="web1" />
-    </div>
+   
     <router-link to="/home" class="home">Home V1</router-link>
   </div>
 </template>
@@ -400,8 +401,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-top: 10%;
 }
 .home {
   display: flex;
@@ -423,7 +423,7 @@ export default {
   justify-content: center;
   align-items: center;
   background: linear-gradient(-45deg, #70caf0, #5f74fc, #961dec, #146dcb);
-
+  margin-top: 10%;
   height: auto;
   width: 100%;
   gap: 10%;

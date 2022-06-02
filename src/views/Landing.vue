@@ -139,35 +139,27 @@
       <a href="https://instagram.com/J_Not_query" class="">
         <Icon
           class="bolt linki"
-          style="font-size: 4em"
+          style="font-size: 6em"
           icon="logos-instagram"
         />
       </a>
       <a href="https://twitter.com/JNotquery" class="">
-        <Icon class="bolt linki" style="font-size: 4em" icon="logos-twitter" />
+        <Icon class="bolt linki" style="font-size: 6em" icon="logos-twitter" />
       </a>
 
       <a href="https://www.linkedin.com/in/justin-parker-849356178/" class="">
-        <Icon class="bolt linki" style="font-size: 4em" icon="logos-linkedin" />
+        <Icon class="bolt linki" style="font-size: 6em" icon="logos-linkedin" />
       </a>
     </div>
     <div class="bottom">Made By J Parker Dev</div>
     <div class="frames">
       <h4 class="frame-title">Ui Designs</h4>
-      <img class="frame" src="../assets/Web 1920 – 1.png" alt="web1" />
-      <img class="frame" src="../assets/Web 1925 – 1.png" alt="web1" />
+      <img class="frame" src="../assets/Wb2.png" alt="web1" />
+      <img class="frame" src="../assets/Wb3.png" alt="web1" />
     </div>
     <div class="frames2">
-      <img
-        class="frame2"
-        src="../assets/iPhone 13, 12 Pro Max – 1.png"
-        alt="web1"
-      />
-      <img
-        class="frame2"
-        src="../assets/iPhone 13, 12 Pro Max – 2.png"
-        alt="web1"
-      />
+      <img class="frame2" src="../assets/ip2.png" alt="web1" />
+      <img class="frame2" src="../assets/ip3.png" alt="web1" />
     </div>
     <router-link to="/home" class="home">Home V1</router-link>
   </div>
@@ -430,7 +422,20 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(-45deg, #70caf0, #5f74fc, #961dec, #146dcb);
+
+  height: auto;
+  width: 100%;
   gap: 10%;
+  padding: 3%;
+  border-radius: 50%;
+}
+.linki {
+  width: 100%;
+  padding: 1%;
+  font-size: 4rem;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
 }
 .frames {
   width: 100%;
@@ -454,7 +459,7 @@ export default {
   border-radius: 5%;
 }
 .frames2 {
-   width: 100%;
+  width: 100%;
   height: auto;
   display: flex;
   margin-top: 10%;

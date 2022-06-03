@@ -597,6 +597,9 @@ export default {
     width: 50%;
     margin-top: 10%;
   }
+  #burger {
+    width: 50%;
+  }
 }
 .fade-enter-active,
 .fade-leave-active {

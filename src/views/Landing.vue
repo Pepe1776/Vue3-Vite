@@ -330,7 +330,7 @@ export default {
   border-radius: 10%;
   margin-top: 2%;
   position: absolute;
-  top: 209%;
+  top: 222%;
   left: 3%;
   z-index: 1;
   opacity: 0.8;
@@ -361,37 +361,37 @@ export default {
 }
 .label1 {
   position: absolute;
-  top: 205%;
+  top: 219%;
   left: 8%;
   z-index: 1;
 }
 .label2 {
   position: absolute;
-  top: 205%;
+  top: 219%;
   left: 21.5%;
   z-index: 1;
 }
 .label3 {
   position: absolute;
-  top: 205%;
+  top: 219%;
   left: 35.3%;
   z-index: 1;
 }
 .label4 {
   position: absolute;
-  top: 205%;
+  top: 219%;
   left: 51%;
   z-index: 1;
 }
 .label5 {
   position: absolute;
-  top: 205%;
+  top: 219%;
   left: 64%;
   z-index: 1;
 }
 .label6 {
   position: absolute;
-  top: 205%;
+  top: 219%;
   left: 81%;
   z-index: 1;
 }

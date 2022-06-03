@@ -145,8 +145,13 @@
       <img class="frame" src="../assets/wb3.png" alt="web1" />
     </div>
     <div class="frames2">
-      <img class="frame2" src="../assets/mondo@2x.png" alt="web1" />
-      <img class="frame2" src="../assets/mondo-cart@2x.png" alt="web1" />
+      <img id="burger" class="frame2" src="../assets/mondo@2x.png" alt="web1" />
+      <img
+        id="burger"
+        class="frame2"
+        src="../assets/mondo-cart@2x.png"
+        alt="web1"
+      />
     </div>
     <div class="frames2">
       <img class="frame2" src="../assets/ip2.png" alt="web1" />
@@ -510,6 +515,10 @@ export default {
   justify-content: center;
   align-items: center;
   margin-top: 10%;
+}
+#burger {
+  object-fit: scale-down;
+  width: 18%;
 }
 @media (max-width: 768px) {
   .img {

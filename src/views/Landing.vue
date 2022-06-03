@@ -135,10 +135,15 @@
         <h3 v-if="active6" class="label label6">Book of Recipes</h3>
       </transition>
     </div>
-     <div class="frames">
+    <div class="frames">
       <h4 class="frame-title">Ui Designs</h4>
+      <img class="frame" src="../assets/UI@2x.png" alt="web1" />
       <img class="frame" src="../assets/wb2.png" alt="web1" />
       <img class="frame" src="../assets/wb3.png" alt="web1" />
+    </div>
+    <div class="frames2">
+      <img class="frame2" src="../assets/mondo@2x.png" alt="web1" />
+      <img class="frame2" src="../assets/mondo-cart@2x.png" alt="web1" />
     </div>
     <div class="frames2">
       <img class="frame2" src="../assets/ip2.png" alt="web1" />
@@ -161,7 +166,7 @@
       </a>
     </div>
     <div class="bottom">Made By J Parker Dev</div>
-   
+
     <router-link to="/home" class="home">Home V1</router-link>
   </div>
 </template>
@@ -450,19 +455,26 @@ export default {
   width: 60%;
   height: auto;
   object-fit: cover;
-  border-radius: 10%;
+  border-radius: 5%;
+  box-shadow: #843efd -5px 4px 12px, rgb(0, 162, 255) -10px 4px 16px;
+
   margin-top: 10%;
   opacity: 0.8;
   transition: all 0.3s ease-in-out;
 }
 .frame2 {
+  width: auto;
+  height: 100%;
   border-radius: 5%;
+  box-shadow: #843efd -5px 4px 12px, rgb(0, 162, 255) -10px 4px 16px;
+  object-fit: contain;
 }
 .frames2 {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   display: flex;
   margin-top: 10%;
+  object-fit: cover;
   justify-content: center;
   align-items: center;
   gap: 10%;

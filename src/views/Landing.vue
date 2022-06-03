@@ -4,7 +4,10 @@
     <div class="nav">
       <button @click="goto('footer')" class="btn">Projects</button>
       <button class="btn">
-        <a href="mailto: justinp@aevio.com">Contact</a>
+        <a href="mailto: justinp@aevio.com"
+          >Contact Me <br />
+          <span class="span">(For Freelance Work)</span></a
+        >
       </button>
     </div>
     <img class="img" src="../assets/outrun-wallpaper.jpg" />
@@ -243,7 +246,7 @@ export default {
   font-size: 10rem;
   font-family: "anton", cursive;
   color: #fdfcfd;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 .nav {
   width: 100%;
@@ -264,10 +267,19 @@ export default {
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
 }
+.span {
+  opacity: 0.7;
+  font-size: 2rem;
+  position: absolute;
+  top: 32%;
+  left: 70.3%;
+  transition: all 0.3s ease-in-out;
+}
 .icon {
   width: 100%;
   text-shadow: #000000 -5px 4px 12px, rgb(255, 0, 230) -10px 4px 16px;
   border: #70caf070 solid 2px;
+  border-radius: 5%;
   padding: 15px;
   font-size: 10.5rem;
   font-family: "Anton", cursive;
@@ -275,16 +287,24 @@ export default {
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
 }
-.btn:hover,
+
 .btn:active,
+.home:hover,
+.btn:hover {
+  opacity: 1;
+  text-shadow: #ff00d0 -5px 4px 12px, rgb(255, 255, 255) -10px 14px 16px;
+}
 .icon:hover {
   opacity: 1;
   transform: scale(1.1);
   border: #70caf0f6 solid 3px;
+  box-shadow: #ff00d0 -5px 4px 12px, rgb(255, 255, 255) -10px 4px 16px;
 }
-.home:hover {
+.linki:hover {
   opacity: 1;
+  box-shadow: #ff00d0 -5px 4px 12px, rgb(255, 255, 255) -10px 14px 16px;
 }
+
 .info {
   width: 100%;
   display: flex;
@@ -535,6 +555,9 @@ export default {
     opacity: 0.7;
     transition: all 0.3s ease-in-out;
   }
+  .span {
+    display: none;
+  }
   .icon {
     width: 100%;
     text-shadow: #000000 -5px 4px 12px, rgb(255, 0, 230) -10px 4px 16px;
@@ -565,12 +588,6 @@ export default {
     width: 50%;
     margin-top: 10%;
   }
-}
-.btn:hover,
-.btn:active,
-.icon:hover {
-  opacity: 1;
-  transform: scale(1.1);
 }
 .fade-enter-active,
 .fade-leave-active {

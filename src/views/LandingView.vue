@@ -15,61 +15,77 @@
       <img class="logo" src="../assets/image0.png" alt="" />
     </div>
     <div class="footer-title" ref="footer">Projects</div>
-    <div class="footer">
-      <a href="https://web3-dao.netlify.app/"
-        ><Icon
+    <div
+      data-aos="fade-left"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+      class="footer"
+    >
+      <a href="https://web3-dao.netlify.app/">
+        <Icon
           @mouseover="active = !active"
           @mouseout="active = !active"
           @touchstart="active = !active"
           @touchend="active = !active"
           class="icon defi"
           icon="cryptocurrency-d"
-      /></a>
-      <a href="https://gratitude-nft.web.app/landing"
-        ><Icon
+        />
+      </a>
+      <a href="https://gratitude-nft.web.app/landing">
+        <Icon
           @mouseover="active2 = !active2"
           @mouseout="active2 = !active2"
           @touchstart="active2 = !active2"
           @touchend="active2 = !active2"
           class="icon nft"
           icon="logos-metamask-icon"
-      /></a>
-      <a href="https://aevio-ch5.netlify.app/"
-        ><Icon
+        />
+      </a>
+      <a href="https://aevio-ch5.netlify.app/">
+        <Icon
           @mouseover="active3 = !active3"
           @mouseout="active3 = !active3"
           @touchstart="active3 = !active3"
           @touchend="active3 = !active3"
           class="icon cash"
           icon="emojione-mobile-phone"
-      /></a>
-      <a href="https://jparker.netlify.app/"
-        ><Icon
+        />
+      </a>
+      <a href="https://jparker.netlify.app/">
+        <Icon
           @mouseover="active4 = !active4"
           @mouseout="active4 = !active4"
           @touchstart="active4 = !active4"
           @touchend="active4 = !active4"
           class="icon purp"
           icon="emojione-alien-monster"
-      /></a>
-      <a href="https://ancestral.vercel.app/"
-        ><Icon
+        />
+      </a>
+      <a href="https://ancestral.vercel.app/">
+        <Icon
           @mouseover="active5 = !active5"
           @mouseout="active5 = !active5"
           @touchstart="active5 = !active5"
           @touchend="active5 = !active5"
           class="icon rec"
           icon="fxemoji-potoffood"
-      /></a>
-      <a href="https://bookofrecipes.netlify.app/"
-        ><Icon
+        />
+      </a>
+      <a href="https://bookofrecipes.netlify.app/">
+        <Icon
           @mouseover="active6 = !active6"
           @mouseout="active6 = !active6"
           @touchstart="active6 = !active6"
           @touchend="active6 = !active6"
           class="icon anc"
           icon="emojione-shallow-pan-of-food"
-      /></a>
+        />
+      </a>
       <transition appear name="fade" mode="out-in">
         <img
           v-if="active"
@@ -109,7 +125,6 @@
           src="../assets/jpa.jpg"
           alt="nft"
           class="defi-img jpa-img"
-          label="J Parker"
         />
       </transition>
       <transition appear name="fade2" mode="out-in">
@@ -140,13 +155,70 @@
     </div>
     <div class="frames">
       <h4 class="frame-title">Ui Designs</h4>
-      <img class="frame" src="../assets/UI@2x.png" alt="web1" />
-      <img class="frame" src="../assets/wb2.png" alt="web1" />
-      <img class="frame" src="../assets/wb3.png" alt="web1" />
+      <img
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        class="frame"
+        src="../assets/UI@2x.png"
+        alt="web1"
+      />
+      <img
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        class="frame"
+        src="../assets/wb2.png"
+        alt="web1"
+      />
+      <img
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        class="frame"
+        src="../assets/wb3.png"
+        alt="web1"
+      />
     </div>
     <div class="frames2">
-      <img id="burger" class="frame2" src="../assets/mondo@2x.png" alt="web1" />
       <img
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        id="burger"
+        class="frame2"
+        src="../assets/mondo@2x.png"
+        alt="web1"
+      />
+      <img
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
         id="burger"
         class="frame2"
         src="../assets/mondo-cart@2x.png"
@@ -154,8 +226,32 @@
       />
     </div>
     <div class="frames2">
-      <img class="frame2" src="../assets/ip2.png" alt="web1" />
-      <img class="frame2" src="../assets/ip3.png" alt="web1" />
+      <img
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        class="frame2"
+        src="../assets/ip2.png"
+        alt="web1"
+      />
+      <img
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        class="frame2"
+        src="../assets/ip3.png"
+        alt="web1"
+      />
     </div>
     <div class="footer-last">
       <a href="https://instagram.com/J_Not_query" class="">
@@ -180,6 +276,8 @@
 </template>
 <script lang="ts" setup>
 import { Icon } from "@iconify/vue";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { ref } from "vue";
 const active = ref(false);
 const active2 = ref(false);
@@ -187,6 +285,7 @@ const active3 = ref(false);
 const active4 = ref(false);
 const active5 = ref(false);
 const active6 = ref(false);
+AOS.init();
 </script>
 <script lang="ts">
 export default {

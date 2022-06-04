@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import MainView from "../views/MainView.vue";
-import Landing from "../views/Landing.vue";
+import LandingView from "../views/LandingView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,7 +19,7 @@ const router = createRouter({
     {
       path: "/",
       name: "landing",
-      component: Landing,
+      component: LandingView,
     },
     {
       path: "/about",

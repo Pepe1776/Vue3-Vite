@@ -12,6 +12,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "pinia": "^2.0.13",
     "vue": "^3.2.31",
     "vue-router": "^4.0.14",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@iconify/vue": "^3.2.1",
     "@rushstack/eslint-patch": "^1.1.0",
+    "@types/aos": "^3.0.4",
     "@types/jsdom": "^16.2.14",
     "@types/node": "^16.11.26",
     "@vitejs/plugin-vue": "^2.3.1",

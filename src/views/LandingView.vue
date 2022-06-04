@@ -12,12 +12,24 @@
     </div>
     <img class="img" src="../assets/outrun-wallpaper.jpg" />
     <div class="info">
-      <img class="logo" src="../assets/image0.png" alt="" />
+      <img
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        class="logo"
+        src="../assets/image0.png"
+        alt=""
+      />
     </div>
     <div class="footer-title" ref="footer">Projects</div>
     <div
       data-aos="fade-left"
-      data-aos-offset="200"
+      data-aos-offset="50"
       data-aos-delay="50"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
@@ -465,7 +477,7 @@ export default {
 }
 .aev-img {
   left: 40%;
-  height: 30%;
+  height: 100%;
   width: auto;
 }
 .jpa-img {
@@ -485,37 +497,37 @@ export default {
 }
 .label1 {
   position: absolute;
-  top: 219%;
+  top: 180%;
   left: 8%;
   z-index: 1;
 }
 .label2 {
   position: absolute;
-  top: 219%;
+  top: 180%;
   left: 21.5%;
   z-index: 1;
 }
 .label3 {
   position: absolute;
-  top: 219%;
+  top: 180%;
   left: 35.3%;
   z-index: 1;
 }
 .label4 {
   position: absolute;
-  top: 219%;
+  top: 180%;
   left: 51%;
   z-index: 1;
 }
 .label5 {
   position: absolute;
-  top: 219%;
+  top: 180%;
   left: 64%;
   z-index: 1;
 }
 .label6 {
   position: absolute;
-  top: 219%;
+  top: 180%;
   left: 81%;
   z-index: 1;
 }

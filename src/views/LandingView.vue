@@ -444,7 +444,7 @@ export default {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 20%;
   margin-bottom: 20%;
 }
 .footer-title {

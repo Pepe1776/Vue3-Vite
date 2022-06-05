@@ -672,11 +672,11 @@ export default {
     z-index: 1;
     opacity: 0.7;
     margin-right: 10%;
-    margin-top: 15%;
+    margin-top: 8%;
     justify-content: center;
   }
   .logo {
-    margin-top: 0%;
+    margin-top: -25%;
   }
   .title {
     width: 100%;
@@ -695,13 +695,14 @@ export default {
     justify-content: space-around;
     align-items: center;
     margin-top: 10%;
-    top: 15%;
+    top: 5%;
     left: 0;
     z-index: 1;
+   
   }
   .btn {
     width: 100%;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: "Anton", cursive;
     opacity: 0.7;
     transition: all 0.3s ease-in-out;

@@ -167,6 +167,66 @@
     </div>
     <div class="frames">
       <h4 class="frame-title">Ui Designs</h4>
+      <div class="frames2">
+        <img
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          id="burger"
+          class="frame2"
+          src="../assets/sws@2x.png"
+          alt="web1"
+        />
+        <img
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          id="burger"
+          class="frame2"
+          src="../assets/sws2@2x.png"
+          alt="web1"
+        />
+      </div>
+      <div class="frames2">
+        <img
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          id="burger"
+          class="frame2"
+          src="../assets/mondo@2x.png"
+          alt="web1"
+        />
+        <img
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          id="burger"
+          class="frame2"
+          src="../assets/mondo-cart@2x.png"
+          alt="web1"
+        />
+      </div>
       <img
         data-aos="fade-left"
         data-aos-offset="200"
@@ -207,36 +267,7 @@
         alt="web1"
       />
     </div>
-    <div class="frames2">
-      <img
-        data-aos="fade-right"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-        id="burger"
-        class="frame2"
-        src="../assets/mondo@2x.png"
-        alt="web1"
-      />
-      <img
-        data-aos="fade-left"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-        id="burger"
-        class="frame2"
-        src="../assets/mondo-cart@2x.png"
-        alt="web1"
-      />
-    </div>
+
     <div class="frames2">
       <img
         data-aos="fade-right"

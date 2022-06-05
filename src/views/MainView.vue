@@ -2,7 +2,6 @@
   <div class="main_cont" :class="isDark ? 'dark-mode' : ''">
     <img src="../assets/tri.jpg" class="main-bg" />
 
-    <LoadingScreen v-show="isLoading"></LoadingScreen>
     <!-- <button @click="isDark = !isDark" class="dark-toggle">
       <Icon
         class="dark-toggle"
@@ -465,7 +464,6 @@
 </template>
 
 <script lang="ts">
-import LoadingScreen from "@/components/LoadingScreen.vue";
 export default {
   name: "app",
   data() {
@@ -488,11 +486,7 @@ export default {
       3000 // after 1 second
     );
   },
-  methods: {
-    components: {
-      LoadingScreen,
-    },
-  },
+  methods: {},
 };
 </script>
 

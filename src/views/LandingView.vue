@@ -167,8 +167,21 @@
       <div class="freelance-dot"></div>
       <div class="freelance-dot2"></div>
       <div class="freelance-dot3"></div>
+      <div class="freelance-dot4"></div>
+      <div class="freelance-dot5"></div>
+      <div class="freelance-dot6"></div>
+      <div class="freelance-dot7"></div>
       <div class="freelance-title">Freelance</div>
-      <div class="freelance-bubble">
+      <div
+        data-aos="flip-down"
+       
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        class="freelance-bubble"
+      >
         <div class="freelance-body">
           <ul>
             <li>
@@ -477,8 +490,8 @@ export default {
   justify-content: center;
   align-items: center;
   margin-top: 20%;
-
-  z-index: 1;
+  opacity: 0.7;
+  z-index: 2;
 }
 .logo {
   width: 50%;
@@ -488,7 +501,7 @@ export default {
   margin-top: -38%;
   z-index: 1;
   box-shadow: #ffffff -15px 14px 18px, rgb(10, 4, 192) -20px 14px 18px;
-  opacity: 0.9;
+  opacity: 0.5;
 }
 .footer {
   display: flex;
@@ -535,12 +548,82 @@ li {
   justify-content: center;
   align-items: center;
   margin-top: 5%;
+  background: transparent;
   box-shadow: #9e5ffc -7px 14px 12px, rgb(64, 2, 89) -15px 24px 16px;
   width: 50%;
   padding: 1rem;
   backdrop-filter: blur(10px);
+  border-radius: 15%;
   border: #70caf057 solid 2px;
+  z-index: 2;
 }
+.freelance-dot {
+  position: absolute;
+  top: 308%;
+  left: 50%;
+  background: radial-gradient(circle at 30% 30%, #a600ff, #006d77);
+  box-shadow: #9e5ffc -7px 14px 12px, rgb(64, 2, 89) -15px 24px 16px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.freelance-dot2 {
+  position: absolute;
+  top: 270%;
+  left: 20%;
+  background: radial-gradient(circle at 30% 30%, #00bbff, #2a0077);
+  box-shadow: #9e5ffc -7px 14px 12px, rgb(64, 2, 89) -15px 24px 16px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.freelance-dot3 {
+  position: absolute;
+  top: 100%;
+  left: 65%;
+  background: radial-gradient(circle at 30% 30%, #e600ff, #006777);
+  box-shadow: #9e5ffc -7px 14px 12px, rgb(64, 2, 89) -15px 24px 16px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.freelance-dot4 {
+  position: absolute;
+  top: 180%;
+  left: 15%;
+  background: radial-gradient(circle at 30% 30%, #9f49f6, #0004d6b9);
+  box-shadow: #9e5ffc -7px 14px 12px, rgb(64, 2, 89) -15px 24px 16px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.freelance-dot5 {
+  position: absolute;
+  top: 498%;
+  left: 5%;
+  background: radial-gradient(circle at 30% 30%, #49c8f6, #470052b9);
+  box-shadow: #9e5ffc -7px 14px 12px, rgb(64, 2, 89) -15px 24px 16px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.freelance-dot6 {
+  position: absolute;
+  top: 678%;
+  left: 75%;
+  background: radial-gradient(circle at 30% 30%, #6589f6, #dc02fefd);
+  box-shadow: #9e5ffc -7px 14px 12px, rgb(64, 2, 89) -15px 24px 16px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  z-index: 0;
+}
+
 .freelance-body {
   margin-bottom: 3%;
 }

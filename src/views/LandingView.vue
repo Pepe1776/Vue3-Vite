@@ -28,9 +28,7 @@
     </div>
     <div class="footer-title" ref="footer">Projects</div>
     <div
-      data-aos="fade-left"
-      data-aos-offset="50"
-      data-aos-delay="50"
+      data-aos="zoom-out-down"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
       data-aos-mirror="true"
@@ -165,6 +163,25 @@
         <h3 v-if="active6" class="label label6">Book of Recipes</h3>
       </transition>
     </div>
+    <div class="freelance">
+      <div class="freelance-dot"></div>
+      <div class="freelance-dot2"></div>
+      <div class="freelance-dot3"></div>
+      <div class="freelance-title">Freelance</div>
+      <div class="freelance-bubble">
+        <div class="freelance-body">
+          <ul>
+            <li>
+              Design/Code and Deploy a custom website for any small business
+            </li>
+            <li>Make custom reports on how to better your existing website</li>
+            <li>
+              Help brand your small business into a modern online presence
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="frames">
       <h4 class="frame-title">Ui Designs</h4>
       <div class="frames2">
@@ -228,7 +245,7 @@
         />
       </div>
       <img
-        data-aos="fade-left"
+        data-aos="flip-right"
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="1000"
@@ -241,7 +258,7 @@
         alt="web1"
       />
       <img
-        data-aos="fade-right"
+        data-aos="flip-left"
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="1000"
@@ -253,8 +270,8 @@
         src="../assets/wb2.png"
         alt="web1"
       />
-      <img
-        data-aos="fade-left"
+      <!-- <img
+        data-aos="flip-down"
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="1000"
@@ -265,7 +282,7 @@
         class="frame"
         src="../assets/wb3.png"
         alt="web1"
-      />
+      /> -->
     </div>
 
     <div class="frames2">
@@ -296,6 +313,7 @@
         alt="web1"
       />
     </div>
+
     <div class="footer-last">
       <a href="https://instagram.com/J_Not_query" class="">
         <Icon
@@ -359,6 +377,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll: smooth;
 }
 .main {
   width: 100vw;
@@ -475,10 +494,11 @@ export default {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 10%;
   margin-bottom: 20%;
 }
-.footer-title {
+.footer-title,
+.freelance-title {
   width: 100%;
   text-shadow: #5c00fc -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
   font-size: 5rem;
@@ -490,6 +510,41 @@ export default {
   align-items: center;
   margin-top: 10%;
 }
+.freelance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -10%;
+}
+li {
+  width: 100%;
+  text-shadow: #5c00fc -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
+  font-size: 2.5rem;
+  font-family: "Anton", cursive;
+  color: #fdfcfd;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.freelance-bubble {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  box-shadow: #9e5ffc -7px 14px 12px, rgb(64, 2, 89) -15px 24px 16px;
+  width: 50%;
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  border: #70caf057 solid 2px;
+}
+.freelance-body {
+  margin-bottom: 3%;
+}
+
 .defi-img {
   width: 30%;
   height: auto;
@@ -566,25 +621,24 @@ export default {
   width: 100%;
   text-shadow: #5c00fc -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
 
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: "Anton", cursive;
   color: #beb8b9;
   opacity: 0.7;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
 }
 .home {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+
   margin-bottom: 10%;
   width: 100%;
   text-shadow: #5c00fc -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
 
-  font-size: 3rem;
+  font-size: 0.5rem;
   font-family: "Anton", cursive;
   color: #beb8b9;
   opacity: 0.7;
@@ -594,7 +648,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(-45deg, #70caf0, #5f74fc, #961dec, #146dcb);
+  background: #961dec51;
   margin-top: 10%;
   height: auto;
   width: 100%;
@@ -698,7 +752,6 @@ export default {
     top: 5%;
     left: 0;
     z-index: 1;
-   
   }
   .btn {
     width: 100%;

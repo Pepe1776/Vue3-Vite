@@ -522,6 +522,7 @@ export default {
   justify-content: center;
   align-items: center;
   margin-top: 10%;
+  z-index: 2;
 }
 .freelance {
   display: flex;
@@ -761,6 +762,7 @@ li {
   object-fit: cover;
   border-radius: 5%;
   box-shadow: #843efd -5px 4px 12px, rgb(0, 162, 255) -10px 4px 16px;
+  z-index: 1;
 
   margin-top: 10%;
   opacity: 0.8;
@@ -798,6 +800,7 @@ li {
 #burger {
   object-fit: scale-down;
   width: 18%;
+  z-index: 1;
 }
 @media (max-width: 768px) {
   .img {
@@ -811,6 +814,9 @@ li {
     margin-right: 10%;
     margin-top: 8%;
     justify-content: center;
+  }
+  li {
+    font-size: 1rem;
   }
   .logo {
     margin-top: -25%;
@@ -864,6 +870,9 @@ li {
     flex-direction: column;
     gap: 5%;
   }
+  .freelance-dot6 {
+    display: none;
+  }
   .footer-last {
     gap: 5%;
     font-size: 0.5rem;
@@ -891,7 +900,7 @@ li {
 }
 .fade2-enter-active,
 .fade2-leave-active {
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .fade2-enter-from,

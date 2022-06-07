@@ -174,7 +174,6 @@
       <div class="freelance-title">Freelance</div>
       <div
         data-aos="flip-down"
-       
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
@@ -864,18 +863,21 @@ li {
   }
   .bottom,
   .home {
-    font-size: 2rem;
+    font-size: 0.5rem;
   }
   .footer {
     flex-direction: column;
     gap: 5%;
   }
+  .freelance-dot3,
+  .freelance-dot,
+  .freelance-dot2,
   .freelance-dot6 {
     display: none;
   }
   .footer-last {
     gap: 5%;
-    font-size: 0.5rem;
+    font-size: 0.3rem;
   }
   .frames2 {
     flex-direction: column;

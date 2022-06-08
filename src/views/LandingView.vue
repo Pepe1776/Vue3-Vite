@@ -266,7 +266,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="frame"
-        src="../assets/UI@2x.png"
+        src="../assets/ios16.png"
         alt="web1"
       />
       <img
@@ -279,7 +279,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="frame"
-        src="../assets/wb2.png"
+        src="../assets/UI@2x.png"
         alt="web1"
       />
       <!-- <img

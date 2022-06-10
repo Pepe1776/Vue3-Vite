@@ -876,6 +876,7 @@ li {
   .bottom,
   .home {
     font-size: 0.5rem;
+    margin-top: 20%;
   }
   .footer {
     flex-direction: column;

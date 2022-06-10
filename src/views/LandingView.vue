@@ -257,6 +257,18 @@
         />
       </div>
       <img
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        class="frame"
+        src="../assets/saturn@2x.png"
+      />
+      <img
         data-aos="flip-right"
         data-aos-offset="200"
         data-aos-delay="50"
@@ -298,7 +310,7 @@
     </div>
 
     <div class="frames2">
-      <img
+      <!-- <img
         data-aos="fade-right"
         data-aos-offset="200"
         data-aos-delay="50"
@@ -323,7 +335,7 @@
         class="frame2"
         src="../assets/ip3.png"
         alt="web1"
-      />
+      /> -->
     </div>
 
     <div class="footer-last">

@@ -257,7 +257,19 @@
         />
       </div>
       <img
-        data-aos="fade-left"
+        data-aos="flip-down"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        class="frame"
+        src="../assets/bot-net@2x.png"
+      />
+      <img
+        data-aos="flip-down"
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="1000"

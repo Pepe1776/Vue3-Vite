@@ -266,6 +266,18 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="frame"
+        src="../assets/Web3 1920 – 1@2x.png"
+      />
+      <img
+        data-aos="flip-down"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        class="frame"
         src="../assets/bot-net@2x.png"
       />
       <img
@@ -280,19 +292,7 @@
         class="frame"
         src="../assets/saturn@2x.png"
       />
-      <img
-        data-aos="flip-right"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-        class="frame"
-        src="../assets/ios16.png"
-        alt="web1"
-      />
+
       <img
         data-aos="flip-left"
         data-aos-offset="200"
@@ -306,49 +306,9 @@
         src="../assets/UI@2x.png"
         alt="web1"
       />
-      <!-- <img
-        data-aos="flip-down"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-        class="frame"
-        src="../assets/wb3.png"
-        alt="web1"
-      /> -->
     </div>
 
-    <div class="frames2">
-      <!-- <img
-        data-aos="fade-right"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-        class="frame2"
-        src="../assets/ip2.png"
-        alt="web1"
-      />
-      <img
-        data-aos="fade-left"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-        class="frame2"
-        src="../assets/ip3.png"
-        alt="web1"
-      /> -->
-    </div>
+    <div class="frames2"></div>
 
     <div class="footer-last">
       <a href="https://instagram.com/J_Not_query" class="">

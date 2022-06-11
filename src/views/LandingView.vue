@@ -266,7 +266,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="frame"
-        src="../assets/Web3 1920 – 1@2x.png"
+        src="../assets/3333.png"
       />
       <img
         data-aos="flip-down"

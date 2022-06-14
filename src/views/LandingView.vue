@@ -10,7 +10,7 @@
         >
       </button>
     </div>
-    <img class="img" src="../assets/outrun-wallpaper.jpg" />
+    <img class="img" src="../assets/JP.png" />
     <div class="info">
       <img
         data-aos="fade-up"
@@ -22,7 +22,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="logo"
-        src="../assets/image0.png"
+        src="../assets/jp22.png"
         alt=""
       />
     </div>
@@ -392,7 +392,7 @@ export default {
   height: auto;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(-45deg, #70caf0, #5f74fc, #961dec, #146dcb);
+  background: linear-gradient(-45deg, #000000, #5c5c5d, #000000, #c5fe9e);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   transition: background 0.3s ease-in-out;
@@ -401,14 +401,12 @@ export default {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 10%;
   box-shadow: #ffffff -15px 14px 18px, rgb(10, 4, 192) -20px 14px 18px;
 
-  margin-top: -20%;
+  margin-top: -8%;
   top: 0%;
   left: 0%;
   z-index: 1;
-  opacity: 0.3;
 }
 .title {
   width: 100%;
@@ -421,14 +419,15 @@ export default {
   font-family: "anton", cursive;
   color: #fdfcfd;
   opacity: 0.9;
+  display: none;
 }
 .nav {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 1%;
-  top: 15%;
+  margin-top: 3%;
+  top: 0%;
   left: 0;
   z-index: 2;
 }
@@ -445,9 +444,10 @@ export default {
   opacity: 0.7;
   font-size: 2rem;
   position: absolute;
-  top: 32%;
+  top: 12%;
   left: 70.3%;
   transition: all 0.3s ease-in-out;
+  display: none;
 }
 .icon {
   width: 100%;
@@ -484,7 +484,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 5%;
   opacity: 0.7;
   z-index: 2;
 }
@@ -524,7 +524,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: -10%;
+  margin-top: 0%;
 }
 li {
   width: 100%;
@@ -573,11 +573,11 @@ li {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 0;
 }
 .freelance-dot3 {
   position: absolute;
-  top: 100%;
+  top: 140%;
   left: 65%;
   background: radial-gradient(circle at 30% 30%, #e600ff, #006777);
   box-shadow: #9e5ffc -7px 14px 12px, rgb(64, 2, 89) -15px 24px 16px;
@@ -633,12 +633,13 @@ li {
   position: absolute;
   top: 222%;
   left: 3%;
-  z-index: 1;
+  z-index: 3;
   opacity: 0.8;
   transition: all 0.3s ease-in-out;
 }
 .nft-img {
   left: 15%;
+  z-index: 5;
 }
 .aev-img {
   left: 40%;
@@ -698,7 +699,7 @@ li {
 }
 .bottom {
   width: 100%;
-  text-shadow: #5c00fc -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
+  text-shadow: #8ffc00 -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
 
   font-size: 2rem;
   font-family: "Anton", cursive;
@@ -715,7 +716,7 @@ li {
 
   margin-bottom: 10%;
   width: 100%;
-  text-shadow: #5c00fc -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
+  text-shadow: #54fc00 -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
 
   font-size: 0.5rem;
   font-family: "Anton", cursive;
@@ -727,13 +728,13 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #961dec51;
+  background: #ececec51;
   margin-top: 10%;
   height: auto;
   width: 100%;
   gap: 10%;
   padding: 3%;
-  border-radius: 50%;
+
 }
 .linki {
   width: 100%;

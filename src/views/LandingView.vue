@@ -184,10 +184,24 @@
         <div class="freelance-body">
           <ul>
             <li>
-              Design/Code and Deploy a custom website for any small business
+              <Icon
+                icon="logos-ant-design"
+                style="font-size: 3em; margin: 10px"
+              />
+              Design modern yet custom websites for clients.
             </li>
-            <li>Make custom reports on how to better your existing website</li>
             <li>
+              <Icon
+                icon="logos-open-graph"
+                style="font-size: 3em; margin: 10px"
+              />
+              Make in depth reports on how to better your existing website
+            </li>
+            <li>
+              <Icon
+                icon="logos:brandfolder-icon"
+                style="font-size: 3em; margin: 10px"
+              />
               Help brand your small business into a modern online presence
             </li>
           </ul>
@@ -392,7 +406,7 @@ export default {
   height: auto;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(-45deg, #000000, #5c5c5d, #000000, #c5fe9e);
+  background: linear-gradient(-45deg, #000000, #1b1b1b, #000000, #c5fe9e);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   transition: background 0.3s ease-in-out;
@@ -484,7 +498,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 15%;
   opacity: 0.7;
   z-index: 2;
 }
@@ -546,7 +560,7 @@ li {
   margin-top: 5%;
   background: transparent;
   box-shadow: #9e5ffc -7px 14px 12px, rgb(64, 2, 89) -15px 24px 16px;
-  width: 50%;
+  width: 60%;
   padding: 1rem;
   backdrop-filter: blur(10px);
   border-radius: 15%;
@@ -566,8 +580,8 @@ li {
 }
 .freelance-dot2 {
   position: absolute;
-  top: 270%;
-  left: 20%;
+  top: 340%;
+  left: 10%;
   background: radial-gradient(circle at 30% 30%, #00bbff, #2a0077);
   box-shadow: #9e5ffc -7px 14px 12px, rgb(64, 2, 89) -15px 24px 16px;
   width: 400px;
@@ -728,13 +742,12 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ececec51;
+  background: #ececec00;
   margin-top: 10%;
   height: auto;
   width: 100%;
   gap: 10%;
   padding: 3%;
-
 }
 .linki {
   width: 100%;

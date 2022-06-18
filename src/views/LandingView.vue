@@ -127,7 +127,10 @@
         />
       </transition>
       <transition appear name="fade2" mode="out-in">
-        <h3 v-if="active3" class="label label3">Mobile Crestron</h3>
+        <h3 v-if="active3" class="label label3">
+          Mobile Crestron <br />
+          View on Mobile only
+        </h3>
       </transition>
       <transition appear name="fade" mode="out-in">
         <img
@@ -689,8 +692,9 @@ li {
 }
 .label3 {
   position: absolute;
-  top: 180%;
-  left: 35.3%;
+  text-align: center;
+  top: 150%;
+  left: 34%;
   z-index: 1;
 }
 .label4 {

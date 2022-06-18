@@ -100,12 +100,12 @@
         <img
           v-if="active"
           class="defi-img tooltiptext"
-          src="../assets/defi.jpg"
+          src="../assets/dao.jpg"
           alt="defi"
         />
       </transition>
       <transition appear name="fade2" mode="out-in">
-        <h3 v-if="active" class="label label1">Web3 Defi</h3>
+        <h3 v-if="active" class="label label1">Web3 DAO</h3>
       </transition>
       <transition appear name="fade" mode="out-in">
         <img

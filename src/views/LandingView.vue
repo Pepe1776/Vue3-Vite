@@ -1043,6 +1043,9 @@ li {
     width: 50%;
     margin-top: 10%;
   }
+  .frame-title {
+    font-size: 3rem;
+  }
   #burger {
     width: 50%;
   }

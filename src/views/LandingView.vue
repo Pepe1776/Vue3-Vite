@@ -322,7 +322,17 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="frame"
-        src="../assets/Aevio-Digital1.png"
+        src="../assets/av1.png"
+      />
+      <img
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        class="frame"
+        src="../assets/av2.png"
       />
       <img
         data-aos="fade-right"
@@ -332,17 +342,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="frame"
-        src="../assets/Aevio-Digital1 – 1.png"
-      />
-      <img
-        data-aos="fade-right"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-        class="frame"
-        src="../assets/Aevio-Digital1 – 2.png"
+        src="../assets/av3.png"
       />
       <div class="frames2">
         <img

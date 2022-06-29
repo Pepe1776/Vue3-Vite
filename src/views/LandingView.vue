@@ -212,6 +212,57 @@
       </div>
     </div>
     <div class="frames">
+      <h4 class="frame-title">Logo Designs</h4>
+      <div class="frames2">
+        <img
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          id="burger"
+          class="frame2"
+          src="../assets/star-3.png"
+          alt="web1"
+        />
+        <img
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          id="burger"
+          class="frame2"
+          src="../assets/star-4.png"
+          alt="web1"
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          id="burger"
+          class="frame2"
+          src="../assets/star-1.png"
+          alt="web1"
+        />
+        <img
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          id="burger"
+          class="frame2"
+          src="../assets/star-2.png"
+          alt="web1"
+        />
+      </div>
       <h4 class="frame-title">Ui Designs</h4>
       <div class="frames2">
         <img
@@ -806,7 +857,7 @@ li {
   object-fit: cover;
   justify-content: center;
   align-items: center;
-  gap: 10%;
+  gap: 5%;
 }
 .frame-title {
   width: 100%;

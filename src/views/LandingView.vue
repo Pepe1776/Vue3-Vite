@@ -263,6 +263,56 @@
           alt="web1"
         />
       </div>
+      <div class="frames2">
+        <img
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          id="burger"
+          class="frame2"
+          src="../assets/unnamed3.png"
+          alt="web1"
+        />
+        <img
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          id="burger"
+          class="frame2"
+          src="../assets/unnamed4.png"
+          alt="web1"
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          id="burger"
+          class="frame2"
+          src="../assets/unnamed5.png"
+          alt="web1"
+        />
+        <img
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          id="burger"
+          class="frame2"
+          src="../assets/unnamed7.png"
+          alt="web1"
+        />
+      </div>
       <h4 class="frame-title">Ui Designs</h4>
       <div class="frames2">
         <img

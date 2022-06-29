@@ -314,6 +314,36 @@
         />
       </div>
       <h4 class="frame-title">Ui Designs</h4>
+      <img
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        class="frame"
+        src="../assets/Aevio-Digital1.png"
+      />
+      <img
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        class="frame"
+        src="../assets/Aevio-Digital1 – 1.png"
+      />
+      <img
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        class="frame"
+        src="../assets/Aevio-Digital1 – 2.png"
+      />
       <div class="frames2">
         <img
           data-aos="fade-right"
@@ -375,7 +405,7 @@
         />
       </div>
       <img
-        data-aos="flip-down"
+        data-aos="fade-right"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
@@ -385,7 +415,7 @@
         src="../assets/Bees-Knees.png"
       />
       <img
-        data-aos="flip-down"
+        data-aos="fade-left"
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="1000"
@@ -397,7 +427,7 @@
         src="../assets/WEb5.png"
       />
       <img
-        data-aos="flip-down"
+        data-aos="fade-right"
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="1000"
@@ -409,7 +439,7 @@
         src="../assets/3333.png"
       />
       <img
-        data-aos="flip-down"
+        data-aos="fade-left"
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="1000"
@@ -421,7 +451,7 @@
         src="../assets/bot-net@2x.png"
       />
       <img
-        data-aos="flip-down"
+        data-aos="fade-right"
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="1000"
@@ -434,7 +464,7 @@
       />
 
       <img
-        data-aos="flip-left"
+        data-aos="fade-left"
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="1000"

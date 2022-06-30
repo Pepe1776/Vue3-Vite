@@ -549,6 +549,10 @@ export default {
   box-sizing: border-box;
   scroll: smooth;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .main {
   width: 100vw;
   height: auto;
@@ -563,8 +567,6 @@ export default {
   width: 100%;
   height: auto;
   object-fit: cover;
-  box-shadow: #ffffff -15px 14px 18px, rgb(10, 4, 192) -20px 14px 18px;
-
   margin-top: -8%;
   top: 0%;
   left: 0%;
@@ -597,6 +599,7 @@ export default {
   font-size: 3rem;
   font-family: "Anton", cursive;
   color: #fdfcfd;
+  background: transparent;
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
 }

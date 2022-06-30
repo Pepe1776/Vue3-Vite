@@ -966,7 +966,7 @@ li {
 }
 @media (max-width: 768px) {
   .img {
-    width: 80%;
+    width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 10%;
@@ -974,7 +974,7 @@ li {
     z-index: 1;
     opacity: 0.7;
     margin-right: 10%;
-    margin-top: 8%;
+    margin-top: 0%;
     justify-content: center;
   }
   li {
@@ -1000,6 +1000,7 @@ li {
     justify-content: space-around;
     align-items: center;
     margin-top: 10%;
+    margin-left: 0%;
     top: 5%;
     left: 0;
     z-index: 1;

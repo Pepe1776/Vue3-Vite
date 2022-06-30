@@ -15,7 +15,7 @@
       </Transition>
     </div>
     <Transition appear name="fade4" mode="out-in">
-      <img class="img" src="../assets/JP.png" />
+      <img class="img" src="../assets/JPDEV.png" />
     </Transition>
     <div class="info">
       <img
@@ -567,7 +567,7 @@ a {
   width: 100%;
   height: auto;
   object-fit: cover;
-  margin-top: -8%;
+  margin-top: -15%;
   top: 0%;
   left: 0%;
   z-index: 1;

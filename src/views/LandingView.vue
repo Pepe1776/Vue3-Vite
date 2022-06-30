@@ -968,11 +968,11 @@ li {
   .img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius: 10%;
     margin: auto;
     z-index: 1;
-    opacity: 0.7;
+    opacity: 0.5;
     margin-right: 10%;
     margin-top: 0%;
     justify-content: center;
@@ -1079,7 +1079,7 @@ li {
 }
 .fade3-enter-active,
 .fade3-leave-active {
-  transition: opacity 5s ease-in-out;
+  transition: opacity 3s ease-in-out;
 }
 
 .fade3-enter-from,
@@ -1088,7 +1088,7 @@ li {
 }
 .fade4-enter-active,
 .fade4-leave-active {
-  transition: opacity 7s ease-in-out;
+  transition: opacity 6s ease-in-out;
 }
 
 .fade4-enter-from,

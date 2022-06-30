@@ -2,15 +2,21 @@
   <div class="main" ref="main">
     <div class="title">J Parker Dev</div>
     <div class="nav">
-      <button @click="goto('footer')" class="btn">Projects</button>
-      <button class="btn">
-        <a href="mailto: justinp@aevio.com"
-          >Contact Me <br />
-          <span class="span">(For Freelance Work)</span></a
-        >
-      </button>
+      <Transition appear name="fade3" mode="out-in">
+        <button @click="goto('footer')" class="btn">Projects</button>
+      </Transition>
+      <Transition appear name="fade3" mode="out-in">
+        <button class="btn">
+          <a href="mailto: justinp@aevio.com"
+            >Contact Me <br />
+            <span class="span">(For Freelance Work)</span></a
+          >
+        </button>
+      </Transition>
     </div>
-    <img class="img" src="../assets/JP.png" />
+    <Transition appear name="fade4" mode="out-in">
+      <img class="img" src="../assets/JP.png" />
+    </Transition>
     <div class="info">
       <img
         data-aos="fade-up"
@@ -497,8 +503,6 @@
       </a>
     </div>
     <div class="bottom">Made By J Parker Dev</div>
-
-    <router-link to="/home" class="home">Home V1</router-link>
   </div>
 </template>
 <script lang="ts" setup>
@@ -581,12 +585,10 @@ export default {
 }
 .nav {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 3%;
-  top: 0%;
-  left: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 2%;
+  margin-left: 60%;
   z-index: 2;
 }
 .btn {
@@ -634,7 +636,10 @@ export default {
 }
 .linki:hover {
   opacity: 1;
-  box-shadow: #ff00d0 -5px 4px 12px, rgb(255, 255, 255) -10px 14px 16px;
+  /* box-shadow: #ff00d0 -5px 4px 12px, rgb(255, 255, 255) -10px 14px 16px; */
+  border: #ff00d0 solid 1px;
+  border-radius: 5%;
+  padding: 10px;
 }
 
 .info {
@@ -1066,6 +1071,24 @@ li {
 
 .fade2-enter-from,
 .fade2-leave-to {
+  opacity: 0;
+}
+.fade3-enter-active,
+.fade3-leave-active {
+  transition: opacity 5s ease-in-out;
+}
+
+.fade3-enter-from,
+.fade3-leave-to {
+  opacity: 0;
+}
+.fade4-enter-active,
+.fade4-leave-active {
+  transition: opacity 7s ease-in-out;
+}
+
+.fade4-enter-from,
+.fade4-leave-to {
   opacity: 0;
 }
 </style>

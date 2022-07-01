@@ -28,7 +28,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="logo"
-        src="../assets/jp.png"
+        src="../assets/JP.png"
         alt=""
       />
     </div>

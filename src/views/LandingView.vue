@@ -15,7 +15,7 @@
       </Transition>
     </div>
     <Transition appear name="fade4" mode="out-in">
-      <img class="img" src="../assets/JPDEV.png" />
+      <img alt="jparker" class="img" src="../assets/JPDEV.png" />
     </Transition>
     <div class="info">
       <img
@@ -28,7 +28,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="logo"
-        src="../assets/jp22.png"
+        src="../assets/jp.png"
         alt=""
       />
     </div>
@@ -328,6 +328,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="frame"
+        alt="aevio"
         src="../assets/av1.png"
       />
       <img
@@ -338,6 +339,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="frame"
+        alt="aevio"
         src="../assets/av2.png"
       />
       <img
@@ -348,6 +350,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="frame"
+        alt="aevio"
         src="../assets/av3.png"
       />
       <div class="frames2">
@@ -418,6 +421,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="frame"
+        alt="bee"
         src="../assets/Bees-Knees.png"
       />
       <img
@@ -430,6 +434,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="frame"
+        alt="web"
         src="../assets/WEb5.png"
       />
       <img
@@ -442,6 +447,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="frame"
+        alt="web image"
         src="../assets/3333.png"
       />
       <img
@@ -454,6 +460,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="frame"
+        alt="bot"
         src="../assets/bot-net@2x.png"
       />
       <img
@@ -466,6 +473,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="frame"
+        alt="saturn"
         src="../assets/saturn@2x.png"
       />
 
@@ -479,8 +487,8 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="frame"
+        alt="ui"
         src="../assets/UI@2x.png"
-        alt="web1"
       />
     </div>
 

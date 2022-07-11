@@ -596,8 +596,6 @@ a {
   top: 78%;
   left: 50%;
   transform: translate(-50%, -50%);
-
- 
 }
 .nav {
   width: 100%;
@@ -997,14 +995,18 @@ li {
   }
   .logo {
     margin-top: -25%;
+    font-size: 1rem;
+  }
+  .info {
+    font-size: 0.8rem;
   }
   .title {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 1%;
+    margin-top: -80%;
     align-items: center;
-    font-size: 4rem;
+    font-size: 2rem;
     font-family: "Anton", cursive;
 
     opacity: 0.7;

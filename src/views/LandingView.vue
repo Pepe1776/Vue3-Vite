@@ -1,6 +1,6 @@
 <template>
   <div class="main" ref="main">
-    <div class="title">J Parker Dev</div>
+    <div class="title">Freelance Web Design</div>
     <div class="nav">
       <Transition appear name="fade3" mode="out-in">
         <button @click="goto('footer')" class="btn">Projects</button>
@@ -28,7 +28,7 @@
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         class="logo"
-        src="../assets/JP.png"
+        src="../assets/Satoshi-logo.png"
         alt=""
       />
     </div>
@@ -587,11 +587,17 @@ a {
   margin-top: 1%;
   align-items: center;
   text-shadow: #5c00fc -5px 4px 12px, rgb(5, 2, 89) -10px 4px 16px;
-  font-size: 10rem;
+  font-size: 6rem;
   font-family: "anton", cursive;
   color: #fdfcfd;
   opacity: 0.9;
-  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+ 
 }
 .nav {
   width: 100%;
@@ -667,9 +673,9 @@ a {
   height: auto;
   object-fit: cover;
   border-radius: 30%;
-  margin-top: -38%;
+  margin-top: -23%;
   z-index: 1;
-  box-shadow: #ffffff -15px 14px 18px, rgb(10, 4, 192) -20px 14px 18px;
+  /* box-shadow: #ffffff -15px 14px 18px, rgb(10, 4, 192) -20px 14px 18px; */
   opacity: 0.5;
 }
 .footer {
@@ -699,6 +705,7 @@ a {
   align-items: center;
   flex-direction: column;
   margin-top: 0%;
+  display: none;
 }
 li {
   width: 100%;

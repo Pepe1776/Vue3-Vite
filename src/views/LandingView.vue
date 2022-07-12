@@ -319,7 +319,10 @@
           alt="web1"
         />
       </div>
-      <h4 class="frame-title">User Interface Design Examples</h4>
+      <h4 class="frame-title">
+       User Interface <br />
+        Design Examples
+      </h4>
       <img
         data-aos="fade-right"
         data-aos-duration="1000"
@@ -1063,6 +1066,7 @@ li {
   }
   .footer-title {
     font-size: 2rem;
+    text-align: center;
   }
   .frames2 {
     flex-direction: column;
@@ -1073,7 +1077,8 @@ li {
     margin-top: 10%;
   }
   .frame-title {
-    font-size: 3rem;
+    font-size: 2rem;
+    text-align: center;
   }
   #burger {
     width: 50%;

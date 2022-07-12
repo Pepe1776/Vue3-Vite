@@ -32,7 +32,7 @@
         alt=""
       />
     </div>
-    <div class="footer-title" ref="footer">Projects</div>
+    <div class="footer-title" ref="footer">Some Projects I Built</div>
     <div
       data-aos="zoom-out-down"
       data-aos-duration="1000"
@@ -218,7 +218,7 @@
       </div>
     </div>
     <div class="frames">
-      <h4 class="frame-title">Logo Designs</h4>
+      <h4 class="frame-title">Fun Logo Examples</h4>
       <div class="frames2">
         <img
           data-aos="fade-right"
@@ -319,7 +319,7 @@
           alt="web1"
         />
       </div>
-      <h4 class="frame-title">Ui Designs</h4>
+      <h4 class="frame-title">User Interface Design Examples</h4>
       <img
         data-aos="fade-right"
         data-aos-duration="1000"
@@ -413,7 +413,7 @@
           alt="web1"
         />
       </div>
-      <img
+      <!-- <img
         data-aos="fade-right"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
@@ -423,7 +423,7 @@
         class="frame"
         alt="bee"
         src="../assets/Bees-Knees.png"
-      />
+      /> -->
       <img
         data-aos="fade-left"
         data-aos-offset="200"

@@ -1061,6 +1061,9 @@ li {
     gap: 5%;
     font-size: 0.3rem;
   }
+  .footer-title {
+    font-size: 2rem;
+  }
   .frames2 {
     flex-direction: column;
   }

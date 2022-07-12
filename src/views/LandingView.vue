@@ -1004,7 +1004,7 @@ li {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: -300px;
+    margin-top: -200px;
     align-items: center;
     font-size: 2rem;
     font-family: "Anton", cursive;

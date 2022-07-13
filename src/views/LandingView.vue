@@ -320,7 +320,7 @@
         />
       </div>
       <h4 class="frame-title">
-       User Interface <br />
+        User Interface <br />
         Design Examples
       </h4>
       <img
@@ -582,6 +582,7 @@ a {
   top: 0%;
   left: 0%;
   z-index: 1;
+  opacity: 0.3;
 }
 .title {
   width: 100%;
